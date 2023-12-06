@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.mentors-section {
+  width: 100%;
+  max-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sponsor-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mentors-section p {
+  color: var(--White, #e6f4f3);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+}
+.mentors-section .special-p {
+  color: var(--Blue, #03BAE4);
+  text-shadow: 0px 0px 15px #1abe6c;
+  font-family: "GoodTimesLt";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 4.4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.mentors-section h2 {
+  color: var(--White, #e6f4f3);
+  font-family: "GoodTimesHv";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sponsorSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsorImg {
+    width: 426px;
+    height: 400px;
+    flex-shrink: 0;
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  max-width: 80%;
+  overflow: hidden;
+  cursor: grab;
+  position: relative;
+}
+
+.slide-wrapper {
+  min-height: 100vh;
+  padding: 0; /* Remove padding as it might interfere with centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 400px;
+}
+.swiper-slide {
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.swiper-slide .mentor-information {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: -330px;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.05) inset;
+  border-radius: 20px;
+  padding: 46px 0;
+  background: rgba(0, 0, 0, 0.40);
+  transition: .3s;
+}
+.swiper-slide:hover .mentor-information {
+  bottom: 0;
+}
+.swiper-slide .mentor-name {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "GoodTimesRgb";
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #1ABE6C 0%, #03BAE4 100%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.swiper-slide-active {
+  transform: scale(1.2); /* Increase scale for centered slide */
+  opacity: 0.95; /* Maintain full opacity for centered slide */
+}
+.swiper-slide:not(.swiper-slide-active) {
+  filter: opacity(0.75); /* Reduce opacity for non-centered slides */
+}
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* font setup  */
+  
+  
+  /* Good Times Heavy */
+  @font-face {
+      font-family: 'GoodTimesHv';
+      src: url('/src/GoodTimes/GoodTimesHv-Regular.eot');
+      src: url('/src/GoodTimes/GoodTimesHv-Regular.eot?#iefix') format('embedded-opentype'),
+           url('/src/GoodTimes/GoodTimesHv-Regular.woff2') format('woff2'),
+           url('/src/GoodTimes/GoodTimesHv-Regular.woff') format('woff'),
+           url('/src/GoodTimes/GoodTimesHv-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'GoodTimesLt';
+      src: url('/src/GoodTimes/GoodTimesLt-Regular.eot');
+      src: url('/src/GoodTimes/GoodTimesLt-Regular.eot?#iefix') format('embedded-opentype'),
+           url('/src/GoodTimes/GoodTimesLt-Regular.woff2') format('woff2'),
+           url('/src/GoodTimes/GoodTimesLt-Regular.woff') format('woff'),
+           url('/src/GoodTimes/GoodTimesLt-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'GoodTimesRgm';
+      src: url('/src/GoodTimes/GoodTimesRg-Regular.eot');
+      src: url('/src/GoodTimes/GoodTimesRg-Regular.eot?#iefix') format('embedded-opentype'),
+           url('/src/GoodTimes/GoodTimesRg-Regular.woff2') format('woff2'),
+           url('/src/GoodTimes/GoodTimesRg-Regular.woff') format('woff'),
+           url('/src/GoodTimes/GoodTimesRg-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+    @font-face {
+      font-family: 'GoodTimesRgb';
+      src: url('/src/GoodTimes/GoodTimesRg-Bold.eot');
+      src: url('/src/GoodTimes/GoodTimesRg-Bold.eot?#iefix') format('embedded-opentype'),
+           url('/src/GoodTimes/GoodTimesRg-Bold.woff2') format('woff2'),
+           url('/src/GoodTimes/GoodTimesRg-Bold.woff') format('woff'),
+           url('/src/GoodTimes/GoodTimesRg-Bold.ttf') format('truetype');
+      font-weight: bold;
+      font-style: normal;
+    }
