@@ -9,7 +9,6 @@ import { useState } from "react";
 
 
 const Hero = () => {
-  
   return (
     <div className=" hero-bg-gradient relative section ">
       <div className="px-10  relative">
