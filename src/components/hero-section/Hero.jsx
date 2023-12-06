@@ -6,8 +6,11 @@ import pcMonitor from "../../assets/Hero/pcMonitor.svg";
 import CountDown from "./CountDown";
 import { useState } from "react";
 
+
+
 const Hero = () => {
   const [transform, setTransform] = useState("translate(-50%, -50%)");
+
   const handleMoouseIn = () => {
     setTransform("translate(-40%, -50%)");
   };
@@ -22,7 +25,7 @@ const Hero = () => {
             <h2>inobyte hackathon</h2>
             <h1>
               <span>byte</span> by <span>byte</span> we, <br />{" "}
-              <span className="innovate">innovate</span> the future
+              <span className="innovate ">innovate</span> the future
             </h1>
             <p className=" font-poppins text-xl text-gray-100 font-light my-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
