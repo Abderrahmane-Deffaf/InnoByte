@@ -9,6 +9,9 @@ import Sponsors from "./components/sponsors/Sponsors";
 import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import ScrollRevealComponent from "./components/ScrollRevealComp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
 import Aos from "aos"; */
@@ -44,6 +47,9 @@ import Aos from "aos"; */
 }); */
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   /* useEffect(() => {
     AOS.init();
     AOS.init({
@@ -71,7 +77,10 @@ function App() {
   }, [offsetX, offsetY]); */
   return (
     <div className="container_wrapper">
-      <div className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center">
+      <div
+        data-aos="zoom-in-up"
+        className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center"
+      >
         <h1 className="text-5xl text-white font-bold mb-8 animate-pulse">
           Coming Soon
         </h1>
@@ -86,10 +95,10 @@ function App() {
       {/* <Slide> */}
       {/* <div data-aos="fade-in">
       </div> */}
-        <EventLocation />
 
       {/* <ScrollRevealComponent>
       </ScrollRevealComponent> */}
+      <EventLocation />
       {/* </Slide> */}
 
       {/* <Slide> */}

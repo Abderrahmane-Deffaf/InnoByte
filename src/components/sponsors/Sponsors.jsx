@@ -62,7 +62,7 @@ function Sponsors() {
 
   return (
     <div className="sponsors-section section">
-      <div className="sponsor-header">
+      <div data-aos="zoom-in" className="sponsor-header">
         <p className="special-p">Sponsors</p>
         <h2>Our Sponsors</h2>
         <p>

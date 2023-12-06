@@ -6,7 +6,7 @@ const ScrollRevealComponent = ({ children }) => {
 
   const handleIntersection = (entries) => {
     console.log(entries) ; 
-    
+
     const entry = entries[0];
     setIsVisible(entry.isIntersecting);
   };
@@ -15,7 +15,7 @@ const ScrollRevealComponent = ({ children }) => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, // Adjust the threshold as needed
+      threshold: 5, // Adjust the threshold as needed
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);

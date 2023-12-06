@@ -30,7 +30,9 @@ const EventLocation = () => {
         animate={{ y: 0 }}
         transition={{ delay: 1 }}
       >
-        <h3 className="text-decoration-1 md:mt-12">Event Location</h3>
+        <h3  className="text-decoration-1 md:mt-12">
+          Event Location
+        </h3>
         <h1 className="text-decoration-2 md:py-2">Syphax Hotel</h1>
       </motion.div>
       <motion.div
