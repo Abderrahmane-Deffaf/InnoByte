@@ -1,4 +1,5 @@
 import "./hero.css";
+
 import keyboard from "../../assets/Hero/keyboard.svg";
 import LogoClr from "../../assets/Hero/LogoClr.svg";
 import lines from "../../assets/Hero/lines.svg";
