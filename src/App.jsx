@@ -84,6 +84,7 @@ function App() {
       {/* </Slide> */}
 
       {/* <Slide> */}
+
       {/* <div data-aos="fade-in">
       </div> */}
         <EventLocation />
