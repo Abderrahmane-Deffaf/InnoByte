@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Swiper from "swiper";
-import { EffectCoverflow } from "swiper/modules";
+import {Swiper, SwiperSlide} from 'swiper/react'
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import sponsor1 from "../../assets/images/sponsor1.png";
 import sponsor2 from "../../assets/images/sponsor1.png";
@@ -63,82 +63,51 @@ function Sponsors() {
   return (
     <div className="sponsors-section section">
       <div data-aos="zoom-in" className="sponsor-header">
-        <p className="special-p">Sponsors</p>
-        <h2>Our Sponsors</h2>
+        <p className="special-p">sponsors</p>
+        <h2>Our sponsors</h2>
         <p>
           We extend our heartfelt gratitude to our generous sponsors whose
           support fuels innovation and drives the success of InnoByte Hackathon.
         </p>
       </div>
-
-      <div className="swiper-container" ref={swiperRef}>
-        <div className="swiper-wrapper">
-          <div className="swiper-slide">
-            <img src={sponsor1} alt="sponsor1" className="sponsorImg" />
-          </div>
-          <div className="swiper-slide">
-            <img src={sponsor2} alt="sponsor1" className="sponsorImg" />
-          </div>
-          <div className="swiper-slide">
-            <img src={sponsor3} alt="sponsor1" className="sponsorImg" />
-          </div>
-          <div className="swiper-slide">
-            <img src={sponsor4} alt="sponsor1" className="sponsorImg" />
-          </div>
-          <div className="swiper-slide">
-            <img src={sponsor5} alt="sponsor1" className="sponsorImg" />
-          </div>
-        </div>
-      </div>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        slideToClickedSlide={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        initialSlide={2}
+        s
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 30,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[EffectCoverflow, Pagination]}
+        className="sponsorSlider"
+      >
+        <SwiperSlide>
+          <img className="sponsorImg" src={sponsor1} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="sponsorImg" src={sponsor2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="sponsorImg" src={sponsor3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="sponsorImg" src={sponsor4} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="sponsorImg" src={sponsor5} />
+        </SwiperSlide>
+        <div id="shadow-right"></div>
+        <div id="shadow-left"></div>
+      </Swiper>
     </div>
   );
 }
 
 export default Sponsors;
-
-// function Sponsors() {
-//   const [postionIndex, setPositionIndex] = useState([0, 1, 2, 3, 4]);
-
-//   const handleNext = () => {
-//     setPositionIndex((prev) => {
-//       const temp = [...prev];
-//       const last = temp.pop();
-//       temp.unshift(last);
-//       return temp;
-//     });
-//   };
-
-//   const positons = ["center", "left1", "left", "right1", "right"];
-
-//   const images = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5];
-
-//   const imageVariants = {
-//     left1: { x: "100%", opacity: 0.8, scale: 0.7, zindex: 1 },
-
-//     left: { x: "-50%", opacity: 0.6, scale: 0.5, zindex: -1 },
-
-//     right1: { x: "", opacity: 0.8, scale: 0.7, zindex: 2 },
-
-//     right: { x: "90%", opacity: 0.6, scale: 0.5, zindex: 1 },
-//   };
-
-//   return (
-//     <div className="Sponsors">
-//       <div className="sponsorSlider ">
-//         {images.map((image, index) => (
-//           <motion.img
-//             key={index}
-//             src={image}
-//             alt="sponsor"
-//             className="rounded-{12px}"
-//             initial="center"
-//             animate={positons[postionIndex[index]]}
-//             variants={imageVariants}
-//             transition={{ duration: 0.5 }}
-//             style={{ width: "30%", positon: "absolute", top: "50%" }}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }

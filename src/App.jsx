@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
-//import Hero from "./components/hero-section/Hero";
+import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventAgenda from "./components/event-agenda/EventAgenda";
 import EventDate from "./components/event-date/EventDate";
@@ -10,7 +10,7 @@ import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import ScrollRevealComponent from "./components/ScrollRevealComp";
 import AOS from "aos";
-import "aos/dist/aos.css";
+//import "aos/dist/aos.css";
 import { useEffect } from "react";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
@@ -89,10 +89,11 @@ function App() {
         </p>
       </div>
       {/* <Slide> */}
-      {/* <Hero /> */}
+      <Hero />
       {/* </Slide> */}
 
       {/* <Slide> */}
+
       {/* <div data-aos="fade-in">
       </div> */}
 

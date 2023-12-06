@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.agenda-section {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.agenda-section.visible {
+  opacity: 1;
+}
+
+
+.event{
+  transform: translateY(-200%);
+  opacity: 0;
+  animation: eventid 0.5s ease 2.5s forwards;
+}
+
+@keyframes eventid {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+th {
+  text-align: center;
+  position: relative;
+}
+
+th, td {
+  padding: 1rem;
+}
+
+thead > tr > th::before {
+  content: "";
+  width: 1px;
+  height: 300px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  animation: slideInHeight 1s ease;
+}
+
+@keyframes slideInHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 300px; /* Set the desired final height */
+  }
+}
+
+tr {
+  position: relative;
+}
+
+tr::after {
+  content: "";
+  width: 500px;
+  height: 1px;
+  position: absolute;
+  background-color: white;
+  left: -30px;
+  bottom: 0;
+  visibility: hidden;
+  display: block;
+  animation: slideInWidth 3s ease 1s forwards;
+}
+
+@keyframes slideInWidth {
+  from {
+    width: 0px;
+  }
+  to {
+    visibility: visible;
+    width: 500px;
+  }
+}
+
+th > p, td > p {
+  transform: translateY(200%);
+  opacity: 0;
+  animation: fadeIn 2s ease 5s forwards;
+}
+
+
+
+.day-header{
+  color: white;
+ 
+  animation: clor 3s ease 7s forwards;
+}
+@keyframes clor {
+  from {
+   color: white;
+  }
+  to {
+    
+    color: #1ABE6C; 
+    
+  }
+  
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.date {
+  opacity: 1;
+  animation: bgShow 3s ease 7s forwards;
+}
+
+@keyframes bgShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    background-color: #1ABE6C;
+    box-shadow: 0 0 80px 0 #1ABE5E;
+  }
+}
+
+.hide {
+  position: absolute;
+  top: -17px;
+  left: -15px;
+  opacity: 0;
+  transform: translateX(-15px); /* Initial transform */
+}
+
+.date:hover .hide {
+  opacity: 1;
+  animation: hhh 0.5s ease 2.5s;
+}
+
+@keyframes hhh {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* Initial transform */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-15px); /* Final transform */
+  }
+}
+
+.date-number {
+  position: relative;
+  z-index: 1; /* Ensure the number appears above the "GO" text */
+}
