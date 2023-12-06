@@ -1,6 +1,6 @@
 .sponsors-section {
   width: 100%;
-  max-height: 100vh;
+  min-height: 100vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .sponsors-section p {
   color: var(--White, #e6f4f3);
   text-align: center;
@@ -51,39 +52,60 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 .sponsorImg {
   display: flex;
-  width: 400px;
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  width: 350px;
   backdrop-filter: blur(15px);
   border-radius: 35px;
 }
-
-.swiper-container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  max-width: 80%;
-  overflow: hidden;
-  cursor: grab;
+@media (max-width: 768px) {
+  .sponsorImg {
+    width: 300px;
+  }
 }
-
-.slide-wrapper {
-  min-height: 100vh;
-  padding: 0; /* Remove padding as it might interfere with centering */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
+@media (max-width: 528px) {
+  .sponsorImg {
+    width: 215px;
+  }
+}
+.swiper {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
 }
 .swiper-slide {
-  width: 400px;
+  width: 350px !important;
+  background-color: transparent;
 }
 .swiper-slide-active {
   transform: scale(1.2); /* Increase scale for centered slide */
-  opacity: 0.9; /* Maintain full opacity for centered slide */
+  opacity: 0.88; /* Maintain full opacity for centered slide */
+  backdrop-filter: blur(13px);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 35px;
 }
 .swiper-slide:not(.swiper-slide-active) {
-  filter: opacity(0.75); /* Reduce opacity for non-centered slides */
+  filter: opacity(0.65); /* Reduce opacity for non-centered slides */
+}
+#shadow-right {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  z-index: 5;
+  background: linear-gradient(to right, #1f1f1f, transparent);
+  pointer-events: none;
+}
+#shadow-left {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 4;
+  background: linear-gradient(to left, #1f1f1f, transparent);
+  pointer-events: none;
 }
