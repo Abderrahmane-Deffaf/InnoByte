@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
-import Hero from "./components/hero-section/Hero";
+//import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventAgenda from "./components/event-agenda/EventAgenda";
 import EventDate from "./components/event-date/EventDate";
@@ -47,9 +47,9 @@ import Aos from "aos"; */
 }); */
 
 function App() {
-  useEffect(() => {
+  /* useEffect(() => {
     AOS.init({ duration: 1000 });
-  }, []);
+  }, []); */
   /* useEffect(() => {
     AOS.init();
     AOS.init({
@@ -78,7 +78,6 @@ function App() {
   return (
     <div className="container_wrapper">
       <div
-        data-aos="zoom-in-up"
         className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center"
       >
         <h1 className="text-5xl text-white font-bold mb-8 animate-pulse">
@@ -89,7 +88,7 @@ function App() {
         </p>
       </div>
       {/* <Slide> */}
-      <Hero />
+      {/* <Hero /> */}
       {/* </Slide> */}
 
       {/* <Slide> */}
