@@ -15,10 +15,10 @@ const Hero = () => {
     setTransform("translate(-50%, -50%)");
   };
   return (
-    <div className=" hero-bg-gradient  section ">
+    <div className=" hero-bg-gradient relative section ">
       <div className="px-10  relative">
         <div className=" px-10 flex flex-col lg:flex-row  items-center  justify-around gap-10 pt-[100px] lg:pt-0">
-          <div data-aos="fade-right" className="title  w-full lg:w-[50%]  ">
+          <div className="title   ">
             <h2>inobyte hackathon</h2>
             <h1>
               <span>byte</span> by <span>byte</span> we, <br />{" "}
@@ -40,7 +40,7 @@ const Hero = () => {
             onMouseLeave={() => {
               handleMoouseOut();
             }}
-            className=" hero-img w-[500px] mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 hover:h-[480px] hover:w-[580px] "
+            className=" hero-img group w-[500px] mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 hover:h-[480px] hover:w-[580px] "
           >
             <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-mainGreen  drop-shadow-green h-[80%] w-[68%] rounded-full"></div>
             <div
