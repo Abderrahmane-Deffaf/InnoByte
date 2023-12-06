@@ -21,7 +21,6 @@ import Aos from "aos"; */
 // };
 
 function App() {
-  
   /* useEffect(() => {
     AOS.init();
     AOS.init({
@@ -62,9 +61,7 @@ function App() {
       {/* </Slide> */}
 
       {/* <Slide> */}
-      <ScrollRevealComponent>
-        <EventLocation />
-      </ScrollRevealComponent>
+      <EventLocation />
       {/* </Slide> */}
 
       {/* <Slide> */}

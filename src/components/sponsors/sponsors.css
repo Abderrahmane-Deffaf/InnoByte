@@ -13,6 +13,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .sponsors-section p {
@@ -24,7 +25,9 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
-  width: min(100%, 800px);
+  width: min(90%, 800px);
+}
+@media (max-width: 528px) {
 }
 .sponsors-section .special-p {
   color: var(--Green, #1abe6c);
@@ -48,6 +51,11 @@
   text-transform: uppercase;
   margin: 0 0 20px 0;
 }
+@media (max-width: 528px) {
+  .sponsors-section h2 {
+    font-size: 30px;
+  }
+}
 .sponsorSlider {
   display: flex;
   justify-content: center;
@@ -56,19 +64,9 @@
 }
 .sponsorImg {
   display: flex;
-  width: 350px;
+  width: 100%;
   backdrop-filter: blur(15px);
   border-radius: 35px;
-}
-@media (max-width: 768px) {
-  .sponsorImg {
-    width: 300px;
-  }
-}
-@media (max-width: 528px) {
-  .sponsorImg {
-    width: 215px;
-  }
 }
 .swiper {
   width: 80%;
@@ -78,6 +76,20 @@
 .swiper-slide {
   width: 350px !important;
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 300px !important;
+  }
+}
+@media (max-width: 528px) {
+  .swiper-slide {
+    width: 215px !important;
+    height: 215px;
+  }
+  .sponsorImg {
+    height: 100%;
+  }
 }
 .swiper-slide-active {
   transform: scale(1.2); /* Increase scale for centered slide */
@@ -104,7 +116,7 @@
   width: 40%;
   position: absolute;
   bottom: 0px;
-  right: 0px;
+  right: -1px;
   z-index: 4;
   background: linear-gradient(to left, #1f1f1f, transparent);
   pointer-events: none;
