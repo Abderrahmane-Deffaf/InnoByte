@@ -8,6 +8,8 @@ import EventDate from "./components/event-date/EventDate";
 import Sponsors from "./components/sponsors/Sponsors";
 import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
+import Form1 from "./components/registrartion-form/Form1";
+import RegForm from "./components/registrartion-form/RegForm";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
 import Aos from "aos"; */

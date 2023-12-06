@@ -5,14 +5,19 @@ import lines from "../../assets/Hero/lines.svg";
 import pcMonitor from "../../assets/Hero/pcMonitor.svg";
 import CountDown from "./CountDown";
 import { useState } from "react";
+import RegForm from "../registrartion-form/RegForm";
 
 const Hero = () => {
-  
+  const [showForm, setShowForm] = useState(false);
+  const showHandler = () => {
+    setShowForm(!showForm);
+  };
   return (
     <div className=" hero-bg-gradient relative section ">
+      <RegForm show={showForm} showHandler={showHandler}/>
       <div className="px-10  relative">
         <div className=" px-10 flex flex-col lg:gap-0 gap-[140px] lg:flex-row  items-center  justify-around  pt-[100px] lg:pt-0">
-          <div className="title   ">
+          <div className="title">
             <h2>inobyte hackathon</h2>
             <h1>
               <span>byte</span> by <span>byte</span> we, <br />{" "}
@@ -22,7 +27,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
               aperiam!
             </p>
-            <button className=" font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
+            <button onClick={showHandler} className=" font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
               register now
             </button>
           </div>
