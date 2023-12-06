@@ -6,8 +6,9 @@ import pcMonitor from "../../assets/Hero/pcMonitor.svg";
 import CountDown from "./CountDown";
 import { useState } from "react";
 
+
+
 const Hero = () => {
-  
   return (
     <div className=" hero-bg-gradient relative section ">
       <div className="px-10  relative">
@@ -16,7 +17,7 @@ const Hero = () => {
             <h2>inobyte hackathon</h2>
             <h1>
               <span>byte</span> by <span>byte</span> we, <br />{" "}
-              <span className="innovate">innovate</span> the future
+              <span className="innovate ">innovate</span> the future
             </h1>
             <p className=" font-poppins text-xl text-gray-100 font-light my-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
