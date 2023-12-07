@@ -4,6 +4,7 @@ import lines from "./lines.svg";
 import pcMonitor from "./pcMonitor.svg";
 import CountDown from "./CountDown";
 import "./hero.css";
+import { useState } from "react";
 
 const Hero = () => {
   const [word, setWord] = useState("innovate");
