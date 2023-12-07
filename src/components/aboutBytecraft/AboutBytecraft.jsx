@@ -13,17 +13,12 @@ const AboutBytecraft = () => {
   return (
     <>
       <section className="section overflow-hidden flex justify-center flex-col items-center relative">
-        <div ref={ref}>
-          <div 
-            className={` ${inView ? "text-center" : "hidden"}`}
-          >
+        <div>
+          <div className={` ${inView ? "text-center" : "hidden"} relative z-10`}>
             <h3 className="text-decoration-3">Bytecraft</h3>
             <h1 className="text-decoration-4">Bytecraft CLub</h1>
-
           </div>
-          <div
-            className={` ${inView ? "logo-div" : "hidden"}`}
-          >
+          <div className={` ${inView ? "logo-div" : "hidden"}`}>
             <img
               className={` ${inView ? "logo" : "hidden"}`}
               src={logo}
@@ -31,25 +26,24 @@ const AboutBytecraft = () => {
               style={{ zIndex: 1 }}
             />
           </div>
-          <div
-            className={` ${inView ? "box1" : "hidden"}`}
-          >
+          <div className={` ${inView ? "box1" : "hidden"}`}>
             <div className={` ${inView ? "box1-text" : "hidden"}`}>
-              established in 2021 by Estin students, is your gateway to a dynamic
-              tech community. We've been the driving force behind amazing events
-              like Chesstin, Ideatech, design camp, GameJam, ByteFestival, and
-              much more to come in the future. Mission: Our goal is to create a
-              space where diverse individuals can explore, learn, and contribute
-              to the ever-evolving world of technology.
+              established in 2021 by Estin students, is your gateway to a
+              dynamic tech community. We've been the driving force behind
+              amazing events like Chesstin, Ideatech, design camp, GameJam,
+              ByteFestival, and much more to come in the future. Mission: Our
+              goal is to create a space where diverse individuals can explore,
+              learn, and contribute to the ever-evolving world of technology.
             </div>
           </div>
-          <div
-           className={` ${inView ? "social_media" : "hidden"}`}
-          >
+          <div className={` ${inView ? "social_media" : "hidden"}`}>
             <a href="https://web.facebook.com/ByteCraftEstin/" className="link">
               Facebook
             </a>
-            <a href="https://www.instagram.com/bytecraft.estin/" className="link">
+            <a
+              href="https://www.instagram.com/bytecraft.estin/"
+              className="link"
+            >
               Instgram
             </a>
             <a
@@ -63,6 +57,7 @@ const AboutBytecraft = () => {
             className="absolute blur-sm left-0 z-0  bottom-[-150px] w-[350px] h-[400px]"
             src={bg_top}
             alt="background"
+            ref={ref}
           />
           <img
             style={{

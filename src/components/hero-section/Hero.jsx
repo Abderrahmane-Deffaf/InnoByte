@@ -7,7 +7,7 @@ import "./hero.css";
 
 const Hero = () => {
   return (
-    <div className=" hero-bg-gradient relative section ">
+    <div className=" hero-bg-gradient overflow-hidden relative section ">
       <div className="px-10  relative">
         <div className=" px-10 flex flex-col lg:gap-0 gap-[140px] lg:flex-row  items-center  justify-around  pt-[100px] lg:pt-0">
           <div className="title   ">

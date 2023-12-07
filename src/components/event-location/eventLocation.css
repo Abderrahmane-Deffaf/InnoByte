@@ -60,10 +60,9 @@
   font-family: "GoodTimesHv";
   font-weight: 500;
   @apply text-[22px];
-}
-.text-decoration-one {
   animation: text_from_top_to_bottom 1s forwards;
 }
+
 /* animation: text_from_top_to_bottom duration timing-function delay iteration-count direction fill-mode; */
 
 @keyframes text_from_top_to_bottom {
@@ -81,9 +80,6 @@
   transform: translateY(-200px);
   @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
   font-family: "GoodTimesHv";
-}
-
-.text-decorationTwo {
   animation: text_from_top_to_bottom 1s forwards;
 }
 
@@ -93,9 +89,6 @@
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
   transform: translateY(600px);
   @apply relative p-8 lg:px-[100px] md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row;
-}
-
-.box_anime {
   animation: box_animation 0.5s ease 1s forwards;
 }
 
@@ -118,10 +111,9 @@
   transform: translateX(-800px);
   @apply rounded-[26px] h-[200px] w-[300px] md:w-[250px] md:h-[220px];
   transition-duration: 0.7s;
-}
-.bg_image_anime {
   animation: main_image_left_position 1s ease 1.2s forwards;
 }
+
 .bg-image:hover {
   background-image: url(./../../assets/eventLocation/second.png);
 }
@@ -138,14 +130,11 @@
 .text-decoration:hover {
   color: white;
 }
-  
-.btn-div{
+
+.btn-div {
   @apply bg-gradient-to-r mx-auto md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px];
 
   transform: translateY(600px);
-}
-
-.btn_div_anime {
   animation: button_position 1.5s 1.6s forwards;
 }
 
@@ -164,19 +153,19 @@
   }
 }
 
-.btn:hover{
-  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC] ;
-  box-shadow: 0px 0px 20px 1px rgba(3, 186, 228, 1), 0px 0px 20px 1px rgba(160, 54, 252, 1);
+.btn:hover {
+  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC];
+  box-shadow: 0px 0px 20px 1px rgba(3, 186, 228, 1),
+    0px 0px 20px 1px rgba(160, 54, 252, 1);
 }
 .logo {
   @apply w-full z-0 h-full;
   filter: blur(0);
-  transition: filter 0.5s ease-in-out;
-}
-.logo_anime {
   animation: logo_bg_animation_position 1.5s forwards,
     logo_bg_animation_blur 1s 2s forwards;
+  transition: filter 0.5s ease-in-out;
 }
+
 
 @keyframes logo_bg_animation_position {
   from {
@@ -209,13 +198,10 @@
 .box-text {
   transform: translateX(800px);
   animation: main_text_right_position 1.4s 2.2s forwards;
-  @apply text-left text-white md:text-[19px] lg:text-[22px] text-[17px] w-[300px] md:w-[330px] lg:w-[420px] ;
-
-}
-
-.box_text_anime {
+  @apply text-left text-white md:text-[19px] lg:text-[22px] text-[17px] w-[300px] md:w-[330px] lg:w-[420px];
   animation: main_text_right_position 1s ease 1.2s forwards;
 }
+
 
 @keyframes main_text_right_position {
   from {
@@ -226,7 +212,6 @@
   }
 }
 
-.logo-div{
-  @apply absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px]
+.logo-div {
+  @apply absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px];
 }
-
