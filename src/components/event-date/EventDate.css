@@ -2,20 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.agenda-section {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
 
-.agenda-section.visible {
-  opacity: 1;
-}
-
-
-.event{
+.event {
   transform: translateY(-200%);
   opacity: 0;
-  animation: eventid 0.5s ease 2.5s forwards;
+  animation: eventid 1s ease forwards;
 }
 
 @keyframes eventid {
@@ -28,6 +19,10 @@
     opacity: 1;
   }
 }
+
+
+
+
 .table {
   display: flex;
   justify-content: center;
@@ -40,9 +35,13 @@ th {
   position: relative;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
 }
+
+
+
 
 thead > tr > th::before {
   content: "";
@@ -51,7 +50,11 @@ thead > tr > th::before {
   position: absolute;
   background-color: white;
   left: 0;
-  animation: slideInHeight 1s ease;
+  height: 0;
+}
+
+.th::before {
+  animation: slideInHeight 0.5s ease 1s forwards;
 }
 
 @keyframes slideInHeight {
@@ -77,7 +80,9 @@ tr::after {
   bottom: 0;
   visibility: hidden;
   display: block;
-  animation: slideInWidth 3s ease 1s forwards;
+}
+.tr::after {
+  animation: slideInWidth 0.5s ease 1.5s forwards;
 }
 
 @keyframes slideInWidth {
@@ -90,31 +95,26 @@ tr::after {
   }
 }
 
-th > p, td > p {
+th > p,
+td > p {
   transform: translateY(200%);
   opacity: 0;
-  animation: fadeIn 2s ease 5s forwards;
+  animation: fadeIn 1s ease 2s forwards;
 }
 
-
-
-.day-header{
+.day-header {
   color: white;
- 
-  animation: clor 3s ease 7s forwards;
+  animation: clor 0.5s ease 3s forwards;
 }
+
 @keyframes clor {
   from {
-   color: white;
+    color: white;
   }
   to {
-    
-    color: #1ABE6C; 
-    
+    color: #1abe6c;
   }
-  
 }
-
 
 @keyframes fadeIn {
   from {
@@ -127,8 +127,9 @@ th > p, td > p {
   }
 }
 .date {
-  opacity: 1;
-  animation: bgShow 3s ease 7s forwards;
+  opacity: 0;
+  box-shadow: 0px 0px 80px 0px #1ABE5EA6;
+  animation: bgShow 0.5s ease 3s forwards;
 }
 
 @keyframes bgShow {
@@ -137,8 +138,7 @@ th > p, td > p {
   }
   to {
     opacity: 1;
-    background-color: #1ABE6C;
-    box-shadow: 0 0 80px 0 #1ABE5E;
+    background-color: #1abe6c;
   }
 }
 
@@ -152,7 +152,7 @@ th > p, td > p {
 
 .date:hover .hide {
   opacity: 1;
-  animation: hhh 0.5s ease 2.5s;
+  animation: hhh 0.5s ease 3s;
 }
 
 @keyframes hhh {
