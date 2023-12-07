@@ -2,7 +2,7 @@ import React from 'react'
 import './Form.css'
 const Form1 = ({formHandler}) => {
   return (
-    <div className=' z-[9999] gap-[100px] flex flex-col text-[36px] justify-center h-full items-center font-[400]'>
+    <div className=' z-[9999] gap-2 lg:gap-[100px] flex flex-col text-xl leading-[3rem] lg:text-[36px] justify-center h-full items-center font-[400]'>
         <span className='text-[36px] text-center capitalize'>Do you want to be part of this amazing hackathon?
             Join us in unleashing innovation!</span>
         <button 
