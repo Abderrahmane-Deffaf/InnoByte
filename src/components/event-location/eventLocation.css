@@ -58,8 +58,10 @@
   text-shadow: 1px 1px 14px #03bae4;
   transform: translateY(-200px);
   font-family: "GoodTimesHv";
-  font-weight: 500; 
+  font-weight: 500;
   @apply text-[22px];
+}
+.text-decoration-one {
   animation: text_from_top_to_bottom 1s forwards;
 }
 /* animation: text_from_top_to_bottom duration timing-function delay iteration-count direction fill-mode; */
@@ -78,8 +80,11 @@
 .text-decoration-2 {
   transform: translateY(-200px);
   @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
-  animation: text_from_top_to_bottom 1s forwards;
   font-family: "GoodTimesHv";
+}
+
+.text-decorationTwo {
+  animation: text_from_top_to_bottom 1s forwards;
 }
 
 .box {
@@ -88,7 +93,10 @@
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
   transform: translateY(600px);
   @apply relative p-8 lg:px-[100px] md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row;
-  animation: box_animation 1s linear 1.4s forwards;
+}
+
+.box_anime {
+  animation: box_animation 0.5s ease 1s forwards;
 }
 
 @keyframes box_animation {
@@ -110,7 +118,9 @@
   transform: translateX(-800px);
   @apply rounded-[26px] h-[200px] w-[300px] md:w-[250px] md:h-[220px];
   transition-duration: 0.7s;
-  animation: main_image_left_position 1.5s 2.2s forwards;
+}
+.bg_image_anime {
+  animation: main_image_left_position 1s ease 1.2s forwards;
 }
 .bg-image:hover {
   background-image: url(./../../assets/eventLocation/second.png);
@@ -132,6 +142,9 @@
 .btn-div {
   @apply bg-gradient-to-r md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px];
   transform: translateY(600px);
+}
+
+.btn_div_anime {
   animation: button_position 1.5s 1.6s forwards;
 }
 
@@ -157,6 +170,8 @@
   @apply w-full z-0 h-full;
   filter: blur(0);
   transition: filter 0.5s ease-in-out;
+}
+.logo_anime {
   animation: logo_bg_animation_position 1.5s forwards,
     logo_bg_animation_blur 1s 2s forwards;
 }
@@ -191,8 +206,11 @@
 
 .box-text {
   transform: translateX(800px);
-  animation: main_text_right_position 1.4s 2.2s forwards;
   @apply text-white text-center md:text-[20px] text-[17px] w-[350px];
+}
+
+.box_text_anime {
+  animation: main_text_right_position 1s ease 1.2s forwards;
 }
 
 @keyframes main_text_right_position {
