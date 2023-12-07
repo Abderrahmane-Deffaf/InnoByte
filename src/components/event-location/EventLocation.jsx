@@ -1,7 +1,9 @@
 import React from "react";
 import "./eventLocation.css";
-import bg_bottom from './assets/bg_bottom.png'
-import bg_top from './assets/bg_top.png'
+import bg_bottom from "./../../assets/eventLocation/bg_bottom.png";
+import bg_top from "./../../assets/eventLocation/bg_top.png";
+import syphax from './../../assets/eventLocation/syphax.png'
+import shadow from "./../../assets/eventLocation/shadow.png";
 const EventLocation = () => {
   
   
@@ -18,7 +20,7 @@ const EventLocation = () => {
       >
         <img
           className={`logo`}
-          src="/event_location/syphax.png"
+          src={syphax}
           alt="SYPHAX"
           style={{ zIndex: 1 }}
         />
@@ -31,7 +33,7 @@ const EventLocation = () => {
             className="bg-image"
           >
             <img
-              src="/event_location/shadow.png"
+              src={shadow}
               className="w-full h-full"
               alt=""
             />

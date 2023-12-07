@@ -47,7 +47,7 @@
 }
   
 .bg-image{
-  background-image: url(/event_location/main.png);
+  background-image: url(./../../assets/eventLocation/main.png);
   position: relative;
   overflow: hidden;
   display: block;
@@ -57,7 +57,7 @@
   animation: main_image_left_position 1.5s 2.2s forwards;
 }
 .bg-image:hover{
-  background-image: url(/event_location/second.png);
+  background-image: url(./../../assets/eventLocation/second.png);
 }
 
 @keyframes main_image_left_position {
