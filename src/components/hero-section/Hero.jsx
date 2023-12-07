@@ -1,7 +1,7 @@
-import keyboard from "./../../assets/hero/keyboard.svg";
-import LogoClr from "../../assets/hero/LogoClr.svg";
-import lines from "../../assets/hero/lines.svg";
-import pcMonitor from "../../assets/hero/pcMonitor.svg";
+import keyboard from "./keyboard.svg";
+import LogoClr from "./LogoClr.svg";
+import lines from "./lines.svg";
+import pcMonitor from "./pcMonitor.svg";
 import CountDown from "./CountDown";
 import "./hero.css";
 
