@@ -29,7 +29,7 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
           </label>
           <textarea
             onChange={handlers.anythingToAddHandler}
-            value={handlers.anythingToAddd}
+            value={handlers.anythingToAdd}
             type="text"
             className=" lg:h-[210px] w-[100%]  px-[26px] bg-white text-black py-3 border-none outline-none rounded-[18px]"
           />

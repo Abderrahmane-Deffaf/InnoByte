@@ -27,7 +27,9 @@ const RegForm = ({show,showHandler}) => {
         };
       }, [showHandler]);
     const submit = async () => {
-        let anythingToAdd = anythingToAddd | " " ; 
+        if(anythingToAdd.length<=0) {
+            setAnythingToAdd("null") ; 
+        }
         const info = {
           name,
           phoneNumber,
@@ -80,7 +82,7 @@ const RegForm = ({show,showHandler}) => {
     const [skillsDescrption,setSkillLevel] = useState('') ;
     const [portfolio,setPortfolio] = useState('') ; 
     const [motivation , setMotivation] = useState('') ;
-    const [anythingToAddd, setAnythingToAdd] = useState('') ;
+    const [anythingToAdd, setAnythingToAdd] = useState(" ") ;
     const form2 = {
         name,
         phoneNumber,
@@ -105,7 +107,7 @@ const RegForm = ({show,showHandler}) => {
     }
     const form4 = {
         motivation,
-        anythingToAddd,
+        anythingToAdd,
         motivationHandler : (e) => setMotivation(e.target.value),
         anythingToAddHandler : (e) => setAnythingToAdd(e.target.value),
     }
