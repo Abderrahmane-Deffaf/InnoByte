@@ -93,7 +93,8 @@
 }
 
 .btn:hover{
-  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC]
+  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC] ;
+  box-shadow: 0px 0px 20px 1px rgba(3, 186, 228, 1), 0px 0px 20px 1px rgba(160, 54, 252, 1);
 }
 .logo {
   @apply w-full z-0 h-full  ;
@@ -131,7 +132,7 @@
 .box-text{
   transform: translateX(800px);
   animation: main_text_right_position 1.4s 2.2s forwards;
-  @apply  text-white text-center md:text-[20px] text-[17px] w-[350px] ;
+  @apply text-left text-white md:text-[19px] lg:text-[22px] text-[17px] w-[300px] md:w-[330px] lg:w-[420px] ;
 }
 
 

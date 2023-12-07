@@ -29,6 +29,8 @@
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
+  transform: translateY(600px);
+  animation:box_animation 1s linear 1.4s forwards ;
   @apply relative py-12 px-8 md:p-10 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
 }
 
@@ -39,6 +41,20 @@
   }to{
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.box1-text{
+  @apply text-white md:text-[25px] lg:text-[30px] text-[20px] w-[350px] lg:w-[800px] md:w-[600px];
+  transform: translateY(800px);
+  animation: box_text_bottom_position 1.2s 2s forwards;
+}
+
+@keyframes box_text_bottom_position {
+  from{
+    transform: translateY(800px);
+  }to{
+    transform:translateY(0);
   }
 }
 

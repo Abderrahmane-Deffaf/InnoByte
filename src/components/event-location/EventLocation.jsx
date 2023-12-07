@@ -23,7 +23,8 @@ const EventLocation = () => {
           className={` ${inView ? "logo-div" : "hidden"}`}
         >
           <img
-            className={`logo`}
+           
+            className='logo'
             src={syphax}
             alt="SYPHAX"
             style={{ zIndex: 1 }}
