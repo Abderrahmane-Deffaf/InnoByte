@@ -6,7 +6,10 @@ function EventDate() {
 
   return (
     <div className=" section p-4  ">
-      <div ref={ref} className="flex flex-col w-full items-center justify-center">
+      <div
+        ref={ref}
+        className="flex flex-col w-full items-center justify-center"
+      >
         <div className={` ${inView ? "event" : "hidden"}`}>
           <h1 className="event  text-gradient bg-gradient-to-r from-[#1ABE6C] to-[#03BAE4] text-transparent bg-clip-text tracking-wide text-lg p-2 text-center">
             EVENT DATE
@@ -47,8 +50,9 @@ function EventDate() {
                 >
                   <p>SAT</p>
                 </th>
-                <th className={`${inView ? "th" : "hidden"} before:top-[20%]`}>
-                </th>
+                <th
+                  className={`${inView ? "th" : "hidden"} before:top-[20%]`}
+                ></th>
               </tr>
             </thead>
 
@@ -107,10 +111,10 @@ function EventDate() {
                   <p> 14</p>
                 </td>
 
-                <td  className=" date">
+                <td className=" date">
                   <p>15</p>
                 </td>
-                <td  className=" date">
+                <td className=" date">
                   <p>16</p>
                 </td>
               </tr>
