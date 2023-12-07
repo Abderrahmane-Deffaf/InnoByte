@@ -40,8 +40,9 @@ const RegForm = ({show,showHandler}) => {
             motivation,
             anythingToAdd
         }
+        console.log(info) ; 
         setLoading(true)
-        const rep = await axios.post("http://207.154.212.198/api/v1/addp",info).then((res)=>{
+        await axios.post("https://aceiny.tech:4444/api/v1/addp",info).then((res)=>{
             showHandler(false)
             return toast.success(res.data.msg, {
                 position: "top-center",
