@@ -27,19 +27,20 @@ const RegForm = ({show,showHandler}) => {
         };
       }, [showHandler]);
     const submit = async () => {
+        const newanythingToAdd = anythingToAdd | "" ; 
         const info = {
-            name,
-            phoneNumber,
-            team,
-            institution,
-            email,
-            teamMembers,
-            role,
-            skillsDescrption,
-            portfolio,
-            motivation,
-            anythingToAdd
-        }
+          name,
+          phoneNumber,
+          team,
+          institution,
+          email,
+          teamMembers,
+          role,
+          skillsDescrption,
+          portfolio,
+          motivation,
+          newanythingToAdd,
+        };
         console.log(info) ; 
         setLoading(true)
         await axios.post("https://aceiny.tech:4444/api/v1/addp",info).then((res)=>{
