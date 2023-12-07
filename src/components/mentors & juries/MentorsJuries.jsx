@@ -1,133 +1,103 @@
 import React, { useEffect, useRef } from "react";
-import Swiper from "swiper";
-import { EffectCoverflow } from "swiper/modules";
-import "./mentorsJuries.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import mentor1 from "../../assets/images/me.jpg";
 import mentor2 from "../../assets/images/me.jpg";
 import mentor3 from "../../assets/images/me.jpg";
 import mentor4 from "../../assets/images/me.jpg";
 import mentor5 from "../../assets/images/me.jpg"; // Add this line
+import "./mentorsJuries.css";
 
 function MentorsJuries() {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    if (swiperRef.current) {
-      const swiper = new Swiper(swiperRef.current, {
-        modules: [EffectCoverflow],
-        centeredSlides: true,
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        effect: "coverflow",
-        speed: 500,
-        slideToClickedSlide: true,
-        coverflowEffect: {
-          rotate: 10,
-          slideShadows: false,
-          scale: 0.9,
-          depth: 150,
-          stretch: -40,
-        },
-      });
-
-      // Set initial active slide index
-      swiper.slideTo(1, false, true); // Set initial slide to the middle one
-
-      // Add active class to initial slide
-      const middleSlideIndex = Math.floor(swiper.slides.length / 2);
-      swiper.slides[middleSlideIndex].classList.add("swiper-slide-active");
-
-      // Flag to track initial slide change
-      let initialSlideChange = true;
-
-      swiper.on("slideChange", () => {
-        const activeSlide = swiper.activeIndex;
-        const slides = swiper.slides.slice();
-
-        slides.forEach((slide, index) => {
-          const slideClasses = slide.classList;
-          const isActive = index === activeSlide;
-
-          if (isActive) {
-            slideClasses.add("swiper-slide-active");
-          } else {
-            slideClasses.remove("swiper-slide-active");
-          }
-        });
-      });
-    }
-  }, [swiperRef]);
-
   return (
     <div className="mentors-section section">
-      <div className="sponsor-header">
+      <div className="mentor-header">
         <p className="special-p">Mentors & Juries</p>
-        <h2>our mantors & juries</h2>
-        <p>
-        A stellar lineup of mentors and juries, industry pioneers committed to guiding and evaluating <br /> the ingenious solutions created during InnoByte Hackathon.
-        </p>
+        <h2>Our Mentors & Juries</h2>
+        <p>A stellar lineup of mentors and juries, industry pianners committes to guiding and evaluating <br /> the ingenious solutions created during InnoByte Hackathon.</p>
       </div>
-      <div className="swiper-container" ref={swiperRef}>
-        <div className="swiper-wrapper">
-          <div className="swiper-slide">
-            <img src={mentor1} alt="sponsor1" className="sponsorImg" />
-            <div className="mentor-information">
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        slideToClickedSlide={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        initialSlide={2}
+        s
+        coverflowEffect={{
+          rotate: 0,
+          stretch: -60,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        modules={[EffectCoverflow, Pagination]}
+        className="mentorSlider"
+      >
+        <SwiperSlide className="mentors">
+          <img className="mentorImg" src={mentor1} />
+          <div className="mentor-information">
             <p className="mentor-name">Rayane Boucheraine</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-            </div>
+            <ul>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+            </ul>
           </div>
-          <div className="swiper-slide">
-            <img src={mentor2} alt="sponsor1" className="sponsorImg" />
-            <div className="mentor-information">
-              <p className="mentor-name">Rayane Boucheraine</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-            </div>
+        </SwiperSlide>
+        <SwiperSlide className="mentors">
+          <img className="mentorImg" src={mentor2} />
+          <div className="mentor-information">
+            <p className="mentor-name">Rayane Boucheraine</p>
+            <ul>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+            </ul>
           </div>
-          <div className="swiper-slide">
-            <img src={mentor3} alt="sponsor1" className="sponsorImg" />
-            <div className="mentor-information">
-              <p className="mentor-name">Rayane Boucheraine</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-            </div>
+        </SwiperSlide>
+        <SwiperSlide className="mentors">
+          <img className="mentorImg" src={mentor3} />
+          <div className="mentor-information">
+            <p className="mentor-name">Rayane Boucheraine</p>
+            <ul>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+            </ul>
           </div>
-          <div className="swiper-slide">
-            <img src={mentor4} alt="sponsor1" className="sponsorImg" />
-            <div className="mentor-information">
-              <p className="mentor-name">Rayane Boucheraine</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-            </div>
+        </SwiperSlide>
+        <SwiperSlide className="mentors">
+          <img className="mentorImg" src={mentor4} />
+          <div className="mentor-information">
+            <p className="mentor-name">Rayane Boucheraine</p>
+            <ul>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+            </ul>
           </div>
-          <div className="swiper-slide">
-            <img src={mentor5} alt="sponsor1" className="sponsorImg" />
-            <div className="mentor-information">
-              <p className="mentor-name">Rayane Boucheraine</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-              <p>kda mana mlhih</p>
-            </div>
+        </SwiperSlide>
+        <SwiperSlide className="mentors">
+          <img className="mentorImg" src={mentor5} />
+          <div className="mentor-information">
+            <p className="mentor-name">Rayane Boucheraine</p>
+            <ul>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+              <li>Kda Mna Mlhih</li>
+            </ul>
           </div>
-        </div>
-      </div>
+        </SwiperSlide>
+        <div id="shadow-right"></div>
+        <div id="shadow-left"></div>
+      </Swiper>
     </div>
   );
 }
