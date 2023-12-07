@@ -29,7 +29,7 @@
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
-  @apply relative py-12 px-8 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
+  @apply relative py-12 px-8 md:p-10 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
 }
 
 @keyframes box_animation {
@@ -68,7 +68,7 @@
 }
 
 .social_media{
-  @apply flex relative z-30 justify-between mt-8 gap-6 md:text-[22px] md:gap-20;
+  @apply flex relative z-30 justify-around mt-8  md:text-[22px] ;
   transform: translateY(600px);
   animation: button_position  1.5s  1.6s  forwards;
 }
@@ -98,4 +98,8 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.logo-div{
+  @apply absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[260px];
 }
