@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from 'swiper/react'
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import sponsor1 from "../../assets/images/sponsor1.png";
@@ -7,9 +7,59 @@ import sponsor2 from "../../assets/images/sponsor1.png";
 import sponsor3 from "../../assets/images/sponsor1.png";
 import sponsor4 from "../../assets/images/sponsor1.png";
 import sponsor5 from "../../assets/images/sponsor1.png"; // Add this line
-import "./sponsors.css";
+import "./sponsors.css" ; 
 
 function Sponsors() {
+  const swiperRef = useRef(null);
+
+  useEffect(() => {
+    if (swiperRef.current) {
+      const swiper = new Swiper(swiperRef.current, {
+        modules: [EffectCoverflow],
+        centeredSlides: true,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        effect: "coverflow",
+        speed: 500,
+        slideToClickedSlide: true,
+        coverflowEffect: {
+          rotate: 10,
+          slideShadows: false,
+          scale: 1,
+          depth: 50,
+          stretch: -40,
+        },
+      });
+
+      // Set initial active slide index
+      swiper.slideTo(1, false, true); // Set initial slide to the middle one
+
+      // Add active class to initial slide
+      const middleSlideIndex = Math.floor(swiper.slides.length / 2);
+      swiper.slides[middleSlideIndex].classList.add("swiper-slide-active");
+
+      // Flag to track initial slide change
+      let initialSlideChange = true;
+
+      swiper.on("slideChange", () => {
+        const activeSlide = swiper.activeIndex;
+        const slides = swiper.slides.slice();
+
+        slides.forEach((slide, index) => {
+          const slideClasses = slide.classList;
+          const isActive = index === activeSlide;
+
+          if (isActive) {
+            slideClasses.add("swiper-slide-active");
+          } else {
+            slideClasses.remove("swiper-slide-active");
+          }
+        });
+      });
+    }
+  }, [swiperRef]);
+
   return (
     <div className="sponsors-section section">
       <div className="sponsor-header">
