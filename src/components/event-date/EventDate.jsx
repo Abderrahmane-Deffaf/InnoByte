@@ -5,7 +5,7 @@ function EventDate() {
   const { ref, inView } = useInView();
 
   return (
-    <div className=" section p-4  ">
+    <div className=" section p-4 overflow-hidden  ">
       <div
         ref={ref}
         className="flex flex-col w-full gap-4 items-center justify-center"

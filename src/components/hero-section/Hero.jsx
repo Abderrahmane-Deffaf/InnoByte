@@ -16,10 +16,10 @@ const Hero = () => {
   const [word, setWord] = useState("innovate");
 
   return (
-    <div className=" hero-bg-gradient p-4 relative section ">
+    <div className=" hero-bg-gradient overflow-hidden relative section ">
       <RegForm show={showForm} showHandler={showHandler} />
-      <div className=" flex flex-col p-4 relative mt-[1rem]  gap-[5rem] lg:flex-row items-center justify-between lg:pt-0">
-        <div className="title basis-full select-none cursor-logo   ">
+      <div className=" flex flex-col p-4 relative  mt-[4rem]  lg:flex-row lg:items-center lg:pt-0">
+        <div className="title flex flex-col gap-2 basis-full select-none cursor-logo   ">
           <h2>innobyte hackathon</h2>
           <h1 className=" text-2xl lg:text-4xl">
             <span>byte</span> by <span>byte</span> we, <br />{" "}
@@ -43,12 +43,12 @@ const Hero = () => {
           </p>
           <button
             onClick={() => showHandler(true)}
-            className="  w-fit font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue"
+            className="  w-fit font-goodtimes-rg text-xl font-bold py-2 px-3 lg:py-4 lg:px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue"
           >
             register now
           </button>
         </div>
-        <div className=" z-10 hero-img group basis-full  mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 ">
+        <div className=" z-10 hero-img group w-[150px]  mx-auto h-[300px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 ">
           <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-mainGreen  drop-shadow-green group-hover:drop-shadow-[0px_0px_80px_rgba(26,190,108,0.5)] group-hover:h-[400px] group-hover:w-[400px] lg:group-hover:h-[500px] lg:group-hover:w-[500px] transition-all duration-500 h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] rounded-full"></div>
           <div
             id="pc-monitor"
@@ -58,7 +58,7 @@ const Hero = () => {
           </div>
           <div
             id="keyboard"
-            className=" transition-all duration-500 group-hover:bottom-[-10px] group-hover:left-[-10px]  w-[250px] h-[150px] md:w-[300px] absolute bottom-0 left-0 "
+            className=" transition-all duration-500 group-hover:bottom-[-10px] group-hover:left-[-10px]  w-[250px] h-[150px] md:w-[300px] absolute left-[-80px] bottom-[-80px] lg:bottom-0 lg:left-0 "
           >
             <img src={keyboard} alt="" className=" h-full w-full" />
           </div>
