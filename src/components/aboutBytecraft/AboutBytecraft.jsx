@@ -12,7 +12,7 @@ const AboutBytecraft = () => {
 
   return (
     <>
-      <section className="section  flex justify-center flex-col items-center relative">
+      <section className="section overflow-hidden flex justify-center flex-col items-center relative">
         <div ref={ref}>
           <div 
             className={` ${inView ? "text-center" : "hidden"}`}
@@ -25,7 +25,7 @@ const AboutBytecraft = () => {
             className={` ${inView ? "logo-div" : "hidden"}`}
           >
             <img
-              className={`logo`}
+              className={` ${inView ? "logo" : "hidden"}`}
               src={logo}
               alt="SYPHAX"
               style={{ zIndex: 1 }}
@@ -34,7 +34,7 @@ const AboutBytecraft = () => {
           <div
             className={` ${inView ? "box1" : "hidden"}`}
           >
-            <div className="text-white md:text-[25px] lg:text-[30px] text-[20px] w-[350px] lg:w-[800px] md:w-[600px]">
+            <div className={` ${inView ? "box1-text" : "hidden"}`}>
               established in 2021 by Estin students, is your gateway to a dynamic
               tech community. We've been the driving force behind amazing events
               like Chesstin, Ideatech, design camp, GameJam, ByteFestival, and
