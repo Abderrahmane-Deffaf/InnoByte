@@ -1,148 +1,229 @@
+/* Good Times Heavy */
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-.text-decoration-1{
-  background: linear-gradient(to right, #03BAE4, #A036FC);
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-decoration-1 {
+  background: linear-gradient(to right, #03bae4, #a036fc);
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  text-shadow: 1px 1px 14px #03BAE4;
+  text-shadow: 1px 1px 14px #03bae4;
   transform: translateY(-200px);
+  font-family: "GoodTimesHv";
+  font-weight: 500;
   @apply text-[22px];
+}
+.text-decoration-one {
   animation: text_from_top_to_bottom 1s forwards;
 }
 /* animation: text_from_top_to_bottom duration timing-function delay iteration-count direction fill-mode; */
 
 @keyframes text_from_top_to_bottom {
-  from{
+  from {
     opacity: 0;
     transform: translateY(250px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
 }
-  
-.text-decoration-2{
+
+.text-decoration-2 {
   transform: translateY(-200px);
   @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
+  font-family: "GoodTimesHv";
+}
+
+.text-decorationTwo {
   animation: text_from_top_to_bottom 1s forwards;
 }
 
-.box{
+.box {
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
   transform: translateY(600px);
-  @apply relative p-8 lg:px-[100px] md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row ;
-  animation:box_animation 1s linear 1.4s forwards ;
+  @apply relative p-8 lg:px-[100px] md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row;
+}
+
+.box_anime {
+  animation: box_animation 0.5s ease 1s forwards;
 }
 
 @keyframes box_animation {
-  from{
+  from {
     opacity: 0;
     transform: translateY(500px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-  
-.bg-image{
+
+.bg-image {
   background-image: url(./../../assets/eventLocation/main.png);
   position: relative;
   overflow: hidden;
   display: block;
   transform: translateX(-800px);
-  @apply  rounded-[26px] h-[200px] w-[300px] md:w-[250px] md:h-[220px];
-  transition-duration: .7s;
-  animation: main_image_left_position 1.5s 2.2s forwards;
+  @apply rounded-[26px] h-[200px] w-[300px] md:w-[250px] md:h-[220px];
+  transition-duration: 0.7s;
 }
-.bg-image:hover{
+.bg_image_anime {
+  animation: main_image_left_position 1s ease 1.2s forwards;
+}
+.bg-image:hover {
   background-image: url(./../../assets/eventLocation/second.png);
 }
 
 @keyframes main_image_left_position {
-  from{
+  from {
     transform: translateX(-800px);
-  }to{
-    transform:translateX(0);
+  }
+  to {
+    transform: translateX(0);
   }
 }
-  
-.text-decoration:hover{
-  color: white
+
+.text-decoration:hover {
+  color: white;
 }
   
 .btn-div{
   @apply bg-gradient-to-r mx-auto md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px];
+
   transform: translateY(600px);
-  animation: button_position  1.5s  1.6s  forwards;
 }
 
-.btn{
- @apply  px-4 py-2 bg-[#1f1f1f] m-1 text-[20px] transition-all duration-500 rounded-[10px];
+.btn_div_anime {
+  animation: button_position 1.5s 1.6s forwards;
+}
+
+.btn {
+  @apply px-4 py-2 bg-[#1f1f1f] m-1 text-[20px] transition-all duration-500 rounded-[10px];
 }
 
 @keyframes button_position {
-  from{
+  from {
     opacity: 0;
     transform: translateY(600px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.btn:hover{
-  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC]
+.btn:hover {
+  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC];
 }
 .logo {
-  @apply w-full z-0 h-full  ;
+  @apply w-full z-0 h-full;
   filter: blur(0);
   transition: filter 0.5s ease-in-out;
-  animation: logo_bg_animation_position 1.5s   forwards,logo_bg_animation_blur 1s  2s  forwards;
+}
+.logo_anime {
+  animation: logo_bg_animation_position 1.5s forwards,
+    logo_bg_animation_blur 1s 2s forwards;
 }
 
 @keyframes logo_bg_animation_position {
-  from{
+  from {
     opacity: 0;
     transform: translateY(600px);
-  }to{
-    opacity:1;
+  }
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes logo_bg_animation_blur {
-  from{
-    filter:blur(0)
-  }to{
+  from {
+    filter: blur(0);
+  }
+  to {
     filter: blur(18px);
   }
 }
 
-.top-image-bg{
-  filter:blur(8px);
-  @apply absolute left-0 -top-[100px] w-[350px] h-[400px]
+.top-image-bg {
+  filter: blur(8px);
+  @apply absolute left-0 -top-[100px] w-[350px] h-[400px];
 }
-.button-image-bg{
-  @apply absolute blur-md right-0 z-0 -bottom-[390px] md:-bottom-[300px] w-[350px] h-[400px]
+.button-image-bg {
+  @apply absolute blur-md right-0 z-0 -bottom-[390px] md:-bottom-[300px] w-[350px] h-[400px];
 }
 
-.box-text{
+.box-text {
   transform: translateX(800px);
-  animation: main_text_right_position 1.4s 2.2s forwards;
-  @apply  text-white text-center md:text-[20px] text-[17px] w-[350px] ;
+  @apply text-white text-center md:text-[20px] text-[17px] w-[350px];
 }
 
+.box_text_anime {
+  animation: main_text_right_position 1s ease 1.2s forwards;
+}
 
 @keyframes main_text_right_position {
-  from{
+  from {
     transform: translateX(800px);
-  }to{
-    transform:translateX(0);
+  }
+  to {
+    transform: translateX(0);
   }
 }
-  
+
 .logo-div{
   @apply absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px]
 }
+

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "goodtimes-hv": ["GoodTimesHv", "sans-serif"],
+        "goodtimes-hv": ["GoodTimesHv"],
         "goodtimes-lt": ["GoodTimesLt", "sans-serif"],
         "goodtimes-rg": ["GoodTimesRg", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
