@@ -138,9 +138,10 @@
 .text-decoration:hover {
   color: white;
 }
+  
+.btn-div{
+  @apply bg-gradient-to-r mx-auto md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px];
 
-.btn-div {
-  @apply bg-gradient-to-r md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px];
   transform: translateY(600px);
 }
 
@@ -221,3 +222,8 @@
     transform: translateX(0);
   }
 }
+
+.logo-div{
+  @apply absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px]
+}
+
