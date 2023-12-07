@@ -1,4 +1,4 @@
-import keyboard from "../../assets/hero/keyboard.svg";
+//import keyboard from "./../../assets/hero/keyboard.svg";
 import LogoClr from "../../assets/hero/LogoClr.svg";
 import lines from "../../assets/hero/lines.svg";
 import pcMonitor from "../../assets/hero/pcMonitor.svg";
@@ -35,12 +35,12 @@ const Hero = () => {
             >
               <img src={pcMonitor} alt="" className=" h-full w-full" />
             </div>
-            <div
+            {/* <div
               id="keyboard"
               className=" transition-all duration-500 group-hover:bottom-[-10px] group-hover:left-[-10px]  w-[300px] h-[150px] absolute bottom-0 left-0 "
             >
               <img src={keyboard} alt="" className=" h-full w-full" />
-            </div>
+            </div> */}
             <div
               id="logo-clr"
               className=" logo-bounce w-[140px] h-[140px] bg-gray-500/40 backdrop-blur-[1px]  rounded-[32px] border-t-4 border-r-4  border-t-mainBlue/60 border-r-mainBlue/60 shadow-[20px_10px_10px_rgba(0,0,0,0.35)] p-6 skew-y-[24deg] absolute transition-all duration-500 group-hover:left-[35%] top-[50%] left-[40%] translate-x-[-50%] translate-y-[-50%]"
