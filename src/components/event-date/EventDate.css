@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.event {
+  transform: translateY(-200%);
+  opacity: 0;
+  font-family: "GoodTimesHv";
+  animation: eventid 1s ease forwards;
+}
+
+@keyframes eventid {
+  from {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+th {
+  text-align: center;
+  position: relative;
+  font-family: "GoodTimesHv";
+}
+
+th,
+td {
+  padding: 0.5rem 0.2rem;
+}
+
+
+
+thead > tr > th::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  height: 0;
+}
+@keyframes slideInHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 210px; /* Set the desired final height */
+  }
+}
+
+.th::before {
+  animation: slideInHeight 0.5s ease 1s forwards;
+}
+
+tr {
+  position: relative;
+}
+
+tr::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  background-color: white;
+  left: -30px;
+  bottom: 0;
+  visibility: hidden;
+  display: block;
+}
+.tr::after {
+  animation: slideInWidth 0.5s ease 1.5s forwards;
+}
+
+@keyframes slideInWidth {
+  from {
+    width: 0px;
+  }
+  to {
+    visibility: visible;
+    width: 385px;
+  }
+}
+
+th > p,
+td > p {
+  transform: translateY(200%);
+  opacity: 0;
+  animation: fadeIn 1s ease 2s forwards;
+  font-family: "GoodTimesHv";
+}
+
+.day-header {
+  color: white;
+  animation: clor 0.5s ease 3s forwards;
+}
+
+@keyframes clor {
+  from {
+    color: white;
+  }
+  to {
+    color: #1abe6c;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.date {
+  opacity: 0;
+  box-shadow: 0px 0px 80px 0px #1abe5ea6;
+  animation: bgShow 0.5s ease 3s forwards;
+}
+
+@keyframes bgShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    background-color: #1abe6c;
+  }
+}
+
+.hide {
+  position: absolute;
+  top: -17px;
+  left: -15px;
+  opacity: 0;
+  transform: translateX(-15px); /* Initial transform */
+}
+
+.date:hover .hide {
+  opacity: 1;
+  animation: hhh 0.5s ease 3s;
+}
+
+@keyframes hhh {
+  from {
+    opacity: 0;
+    transform: translateX(-30px); /* Initial transform */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-15px); /* Final transform */
+  }
+}
+
+.date-number {
+  position: relative;
+  z-index: 1; /* Ensure the number appears above the "GO" text */
+}
+
+@media screen and (min-width: 600px) {
+  td,
+  th {
+    padding: 1rem;
+  }
+  @keyframes slideInHeight {
+    from {
+      height: 0;
+    }
+    to {
+      height: 300px; /* Set the desired final height */
+    }
+  }
+  @keyframes slideInWidth {
+    from {
+      width: 0px;
+    }
+    to {
+      visibility: visible;
+      width: 565px;
+    }
+  }
+}

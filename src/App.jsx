@@ -1,12 +1,9 @@
 import React from "react";
 import "./index.css";
-import {createRoot} from 'react-dom/client'
+import { createRoot } from "react-dom/client";
 import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
-import EventAgenda from "./components/event-agenda/EventAgenda";
 import EventDate from "./components/event-date/EventDate";
-import Sponsors from "./components/sponsors/Sponsors";
-import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import NavBar from "./NavBar";
 /* import AOS from "aos";
@@ -21,31 +18,7 @@ import Aos from "aos"; */
 // };
 
 function App() {
-  /* useEffect(() => {
-    AOS.init();
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  }, []);
-  const [offsetX, setOffsetX] = useState(0);
-  const [offsetY, setOffsetY] = useState(0);
-  useEffect(() => {
-    const cursor = document.getElementById("cursor-glow");
-    const updateCursorPosition = () => {
-      cursor.style.transform = `translate(-50%, -50%) translate(${offsetX}px, ${offsetY}px)`;
-      requestAnimationFrame(updateCursorPosition);
-    };
-    document.addEventListener("mousemove", (e) => {
-      setOffsetX(e.pageX);
-      setOffsetY(e.pageY);
-    });
-    updateCursorPosition();
 
-    return () => {
-      document.removeEventListener("mousemove", () => {});
-    };
-  }, [offsetX, offsetY]); */
   return (
     <div className="container_wrapper">
       <div className=" container mx-auto">
@@ -58,34 +31,14 @@ function App() {
         <p className="text-white text-lg mb-8">
           We're working hard to bring you something amazing. Stay tuned!
         </p>
-      </div>
-      {/* <Slide> */}
+      </div> 
       <Hero />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
       <EventLocation />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
       <EventDate />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
-      <Sponsors />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
-      <MentorsJuries />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
-      <EventAgenda />
-      {/* </Slide> */}
-
-      {/* <Slide> */}
+      {/* <Sponsors />
+      <MentorsJuries /> */}
+      {/* <EventAgenda /> */}
       <AboutBytecraft />
-      {/* </Slide> */}
     </div>
   );
 }
