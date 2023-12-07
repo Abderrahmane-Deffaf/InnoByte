@@ -27,7 +27,7 @@ const RegForm = ({show,showHandler}) => {
         };
       }, [showHandler]);
     const submit = async () => {
-        const newanythingToAdd = anythingToAdd | "" ; 
+        anythingToAdd = anythingToAdd | " " ; 
         const info = {
           name,
           phoneNumber,
@@ -39,7 +39,7 @@ const RegForm = ({show,showHandler}) => {
           skillsDescrption,
           portfolio,
           motivation,
-          newanythingToAdd,
+          anythingToAdd,
         };
         console.log(info) ; 
         setLoading(true)
