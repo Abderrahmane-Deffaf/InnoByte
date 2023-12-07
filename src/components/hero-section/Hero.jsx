@@ -4,13 +4,13 @@ import LogoClr from "../../assets/Hero/LogoClr.svg";
 import lines from "../../assets/Hero/lines.svg";
 import pcMonitor from "../../assets/Hero/pcMonitor.svg";
 import CountDown from "./CountDown";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import RegForm from "../registrartion-form/RegForm";
 
 const Hero = () => {
   const [showForm, setShowForm] = useState(false);
-  const showHandler = () => {
-    setShowForm(!showForm);
+  const showHandler = (value) => {
+    setShowForm(value);
   };
   return (
     <div className=" hero-bg-gradient relative section ">
@@ -27,7 +27,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
               aperiam!
             </p>
-            <button onClick={showHandler} className=" font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
+            <button onClick={()=>showHandler(true)} className=" font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
               register now
             </button>
           </div>

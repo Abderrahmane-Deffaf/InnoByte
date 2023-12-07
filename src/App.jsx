@@ -8,8 +8,8 @@ import EventDate from "./components/event-date/EventDate";
 import Sponsors from "./components/sponsors/Sponsors";
 import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
-import Form1 from "./components/registrartion-form/Form1";
-import RegForm from "./components/registrartion-form/RegForm";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
 import Aos from "aos"; */
@@ -49,6 +49,7 @@ function App() {
   }, [offsetX, offsetY]); */
   return (
     <div className="container_wrapper">
+      <ToastContainer/>
       <div className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center">
         <h1 className="text-5xl text-white font-bold mb-8 animate-pulse">
           Coming Soon

@@ -1,34 +1,39 @@
 import React from 'react'
 import TextFIeld from './TextFIeld'
 import { GoChevronRight , GoChevronLeft } from "react-icons/go";
-const Form2 = ({formHandler}) => {
+const Form2 = ({formHandler,handlers}) => {
     const fields = [
         {
             label : "fullname",
-            onchangee : ''
+            onchangee : handlers.fullnameHandler,
+            value : handlers.name
         },
         {
             label : "email",
-            onchangee : ''
+            onchangee : handlers.emailHandler,
+            value : handlers.email
         },
         {
             label : "phone number",
-            onchangee : ''
+            onchangee : handlers.phoneNumberHandler,
+            value : handlers.phoneNumber
         },
         {
             label : "university",
-            onchangee : ''
+            onchangee : handlers.universityHandler,
+            value : handlers.institution
         },
         {
             label : "team name",
-            onchangee : ''
+            onchangee : handlers.teamNameHandler,
+            value : handlers.team
         },
     ]
   return (
-    <div className='flex flex-col justify-between h-full'>
-        <div className='form2 col-span-2'>
+    <div className='flex flex-col gap-[30px] justify-between h-full'>
+        <div className='form2 '>
             {
-                fields.map((v,i)=> <TextFIeld label={v.label} />)
+                fields.map((v,i)=> <TextFIeld value={v.value} onchange={v.onchangee} label={v.label} />)
             }
         </div>
         <div className='flex justify-end'>
