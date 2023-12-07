@@ -30,18 +30,18 @@ const Form2 = ({formHandler,handlers}) => {
         },
     ]
   return (
-    <div className='flex flex-col gap-[30px] justify-between h-full'>
+    <div className='flex flex-col  lg:gap-[30px] justify-between h-full'>
         <div className='form2 '>
             {
                 fields.map((v,i)=> <TextFIeld value={v.value} onchange={v.onchangee} label={v.label} />)
             }
         </div>
         <div className='flex justify-end'>
-            <div onClick={()=>formHandler(3)} className=' flex items-center justify-center cursor-pointer  hover:bg-[#1ABE6C] hover:border-transparent hover:text-black smoth-t hover:gap-[8px] gap-[0px] hover:drop-shadow-green bg-transparent border-[2px] border-[#1ABE6C] text-[28px] font-[700] text-[#1ABE6C] w-[182px]  h-[66px] rounded-[16px]'>
+            <div onClick={()=>formHandler(3)} className=' flex items-center justify-center cursor-pointer  hover:bg-[#1ABE6C] hover:border-transparent hover:text-black smoth-t hover:gap-[8px]  hover:drop-shadow-green bg-transparent border-[2px] border-[#1ABE6C] text-[28px] font-[700] text-[#1ABE6C] px-3 mt-3 py-1 rounded-[16px]'>
                 <span className='  glow-text '>
                     NEXT
                 </span>
-                <GoChevronRight className='text-[36px]'/>
+                <GoChevronRight className=' text-lg lg:text-[36px]'/>
             </div>
         </div>
     </div>
