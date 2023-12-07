@@ -34,7 +34,7 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   height: 100vh;
-} 
+}
 
 .section {
   scroll-snap-align: start;
@@ -45,3 +45,4 @@ body {
   justify-content: center;
   scroll-behavior: smooth;
 }
+

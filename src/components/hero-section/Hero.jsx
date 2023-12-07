@@ -11,7 +11,7 @@ const Hero = () => {
   
   return (
     <div className=" hero-bg-gradient relative section ">
-      <div className="px-10  relative">
+      <div className=" relative">
         <div className=" px-10 flex flex-col  gap-[140px] lg:flex-row items-center  justify-around  pt-[100px] lg:pt-0">
           <div className="title select-none cursor-logo   ">
             <h2>innobyte hackathon</h2>
