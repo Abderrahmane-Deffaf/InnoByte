@@ -60,11 +60,9 @@
   font-weight: 600;
   color: #03a6ff;
   text-shadow: 0px 0px 20px rgba(3, 166, 255, 0.8);
-  margin-bottom: 10px;
   letter-spacing: 4px;
 }
 .title h1 {
-  font-size: 2rem;
   font-family: "GoodTimesHv";
   color: #fdfdfd;
 }
