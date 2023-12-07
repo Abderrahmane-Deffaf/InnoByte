@@ -12,6 +12,8 @@ import ScrollRevealComponent from "./components/ScrollRevealComp";
 import AOS from "aos";
 //import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Comp from "./components/Comp";
+import { useInView } from "react-intersection-observer";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
 import Aos from "aos"; */
@@ -47,6 +49,7 @@ import Aos from "aos"; */
 }); */
 
 function App() {
+  const { ref, inView } = useInView();
   /* useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []); */
@@ -77,9 +80,7 @@ function App() {
   }, [offsetX, offsetY]); */
   return (
     <div className="container_wrapper">
-      <div
-        className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center"
-      >
+      <div className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center">
         <h1 className="text-5xl text-white font-bold mb-8 animate-pulse">
           Coming Soon
         </h1>
@@ -98,11 +99,12 @@ function App() {
 
       {/* <ScrollRevealComponent>
       </ScrollRevealComponent> */}
+
       <EventLocation />
       {/* </Slide> */}
 
       {/* <Slide> */}
-      <EventDate />
+      <EventDate  />
       {/* </Slide> */}
 
       {/* <Slide> */}

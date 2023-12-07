@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./eventLocation.css";
 
-const EventLocation = () => {
+const EventLocation = ({ref, inView}) => {
   const [showBox, setShowBox] = useState(false);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const EventLocation = () => {
   }, []);
 
   return (
-    <motion.section className=" flex flex-col items-center section relative">
+    <motion.section ref={ref} className=" flex flex-col items-center section relative">
       <motion.div
         initial={{ y: 400 }}
         animate={{ y: 0 }}
