@@ -12,7 +12,7 @@ const EventLocation = () => {
       <div
         className="text-center"
       >
-        <h3 className="text-decoration-1 ">Event Location</h3>
+        <h3 className="text-decoration-1 font-goodtimes-hv ">Event Location</h3>
         <h1 className="text-decoration-2">Syphax Hotel</h1>
       </div>
       <div

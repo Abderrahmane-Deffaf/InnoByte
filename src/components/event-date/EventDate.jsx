@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 
 function EventDate() {
   const { ref, inView } = useInView();
-  console.log(inView);
 
   return (
     <div className=" section ">

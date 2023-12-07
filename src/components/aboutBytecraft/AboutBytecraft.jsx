@@ -27,7 +27,7 @@ const AboutBytecraft = () => {
           transition={{ delay: 0.6 }}
           style={{ zIndex: 2 }}
         >
-          <div className="block text-white md:text-[25px] lg:text-[30px] text-[20px] w-[350px] lg:w-[800px] md:w-[600px]">
+          <div className="block text-white md:text-[25px] lg:text-[1.5rem] text-[20px] w-[350px] lg:w-[800px] md:w-[600px]">
             established in 2021 by Estin students, is your gateway to a dynamic
             tech community. We've been the driving force behind amazing events
             like Chesstin, Ideatech, design camp, GameJam, ByteFestival, and
