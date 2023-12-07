@@ -1,13 +1,9 @@
-import "./hero.css";
-
-import keyboard from "../../assets/Hero/keyboard.svg";
-import LogoClr from "../../assets/Hero/LogoClr.svg";
-import lines from "../../assets/Hero/lines.svg";
-import pcMonitor from "../../assets/Hero/pcMonitor.svg";
+import keyboard from "../../assets/hero/keyboard.svg";
+import LogoClr from "../../assets/hero/LogoClr.svg";
+import lines from "../../assets/hero/lines.svg";
+import pcMonitor from "../../assets/hero/pcMonitor.svg";
 import CountDown from "./CountDown";
-import { useState } from "react";
-
-
+import "./hero.css";
 
 const Hero = () => {
   return (
@@ -30,7 +26,6 @@ const Hero = () => {
           </div>
           <div
             data-aos="fade-left"
-            
             className=" z-10 hero-img group w-[500px] mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 "
           >
             <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-mainGreen  drop-shadow-green group-hover:h-full group-hover:w-[88%] transition-all duration-500 h-[80%] w-[68%] rounded-full"></div>
@@ -73,6 +68,5 @@ const Hero = () => {
     </div>
   );
 };
-
 
 export default Hero;

@@ -8,7 +8,7 @@ const AboutBytecraft = () => {
   return (
     <>
       <section
-        className='w-screen overflow-hidden flex justify-center flex-col items-center h-screen relative'
+        className='section  flex justify-center flex-col items-center relative'
       >
         <div className='text-center'>
           <h3 className='text-decoration-3'>Bytecraft</h3>

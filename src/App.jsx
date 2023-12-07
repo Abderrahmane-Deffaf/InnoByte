@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
-//import Hero from "./components/hero-section/Hero";
+import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventAgenda from "./components/event-agenda/EventAgenda";
 import EventDate from "./components/event-date/EventDate";
@@ -21,12 +21,12 @@ function App() {
           We're working hard to bring you something amazing. Stay tuned!
         </p>
       </div>
-      {/* <Hero /> */}
+      <Hero />
       <EventLocation />
       <EventDate />
-      <Sponsors />
-      <MentorsJuries />
-      <EventAgenda />
+      {/* <Sponsors />
+      <MentorsJuries /> */}
+      {/* <EventAgenda /> */}
       <AboutBytecraft />
     </div>
   );

@@ -4,7 +4,7 @@ import bg_bottom from './assets/bg_bottom.png'
 import bg_top from './assets/bg_top.png'
 const EventLocation = () => {
   
-
+  
   return (
     <section className="flex flex-col overflow-hidden justify-center items-center section relative">
       <div
