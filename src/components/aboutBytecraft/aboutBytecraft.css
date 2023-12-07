@@ -1,0 +1,101 @@
+.text-decoration-3{
+  background: linear-gradient(to right, #03BAE4, #A036FC);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+  text-shadow: 1px 1px 14px #03BAE4;
+  transform: translateY(-200px);
+  @apply text-[22px];
+  animation: text_from_top_to_bottom 1s forwards;
+}
+
+@keyframes text_from_top_to_bottom {
+  from{
+    opacity: 0;
+    transform: translateY(250px);
+  }to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.text-decoration-4{
+  transform: translateY(-200px);
+  @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
+  animation: text_from_top_to_bottom 1s forwards;
+}
+
+.box1{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
+  @apply relative py-12 px-8 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
+}
+
+@keyframes box_animation {
+  from{
+    opacity: 0;
+    transform: translateY(500px);
+  }to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  @apply w-full z-0 h-full  ;
+  filter: blur(0);
+  transition: filter 0.5s ease-in-out;
+  animation: logo_bg_animation_position 1.5s   forwards,logo_bg_animation_blur 1s  2s  forwards;
+}
+
+@keyframes logo_bg_animation_position {
+  from{
+    opacity: 0;
+    transform: translateY(600px);
+  }to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes logo_bg_animation_blur {
+  from{
+    filter:blur(0)
+  }to{
+    filter: blur(18px);
+  }
+}
+
+.social_media{
+  @apply flex relative z-30 justify-between mt-8 gap-6 md:text-[22px] md:gap-20;
+  transform: translateY(600px);
+  animation: button_position  1.5s  1.6s  forwards;
+}
+.social_media .link{
+  border: 1px solid white;
+  @apply block w-fit relative z-20 rounded-xl h-fit px-3 md:px-6 md:py-3 py-2 uppercase;
+}
+.social_media .link:nth-child(1):hover{
+  border: 0px;
+  background: linear-gradient(to right , rgba(2, 101, 225, 1), rgba(24, 170, 253, 1) );
+}
+.social_media .link:nth-child(2):hover{
+  border: 0px;
+  background: linear-gradient(to right , #FCAF45,#E1306C ,#833AB4 );
+
+}
+.social_media .link:nth-child(3):hover{
+  border: 0px;
+  background: linear-gradient(to right , rgba(0, 114, 177, 1), rgba(0, 86, 133, 1) );
+}
+
+@keyframes button_position {
+  from{
+    opacity: 0;
+    transform: translateY(600px);
+  }to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
