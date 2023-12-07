@@ -19,6 +19,7 @@ const AboutBytecraft = () => {
           >
             <h3 className="text-decoration-3">Bytecraft</h3>
             <h1 className="text-decoration-4">Bytecraft CLub</h1>
+
           </div>
           <div
             className={` ${inView ? "logo-div" : "hidden"}`}

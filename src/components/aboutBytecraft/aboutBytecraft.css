@@ -1,44 +1,100 @@
-.text-decoration-3{
-  background: linear-gradient(to right, #03BAE4, #A036FC);
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.text-decoration-3 {
+  background: linear-gradient(to right, #03bae4, #a036fc);
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  text-shadow: 1px 1px 14px #03BAE4;
+  text-shadow: 1px 1px 14px #03bae4;
   transform: translateY(-200px);
   @apply text-[22px];
+  font-family: "GoodTimesHv";
   animation: text_from_top_to_bottom 1s forwards;
 }
 
 @keyframes text_from_top_to_bottom {
-  from{
+  from {
     opacity: 0;
     transform: translateY(250px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.text-decoration-4{
+.text-decoration-4 {
+  font-family: "GoodTimesHv";
+
   transform: translateY(-200px);
   @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
   animation: text_from_top_to_bottom 1s forwards;
 }
 
-.box1{
+.box1 {
   color: white;
   background-color: rgba(255, 255, 255, 0.08);
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
   transform: translateY(600px);
   animation:box_animation 1s linear 1.4s forwards ;
   @apply relative py-12 px-8 md:p-10 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
-}
 
+}
 @keyframes box_animation {
-  from{
+  from {
     opacity: 0;
     transform: translateY(500px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -59,58 +115,70 @@
 }
 
 .logo {
-  @apply w-full z-0 h-full  ;
+  @apply w-full z-0 h-full;
   filter: blur(0);
   transition: filter 0.5s ease-in-out;
-  animation: logo_bg_animation_position 1.5s   forwards,logo_bg_animation_blur 1s  2s  forwards;
+  animation: logo_bg_animation_position 1.5s forwards,
+    logo_bg_animation_blur 1s 2s forwards;
 }
 
 @keyframes logo_bg_animation_position {
-  from{
+  from {
     opacity: 0;
     transform: translateY(600px);
-  }to{
-    opacity:1;
+  }
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
 }
 
 @keyframes logo_bg_animation_blur {
-  from{
-    filter:blur(0)
-  }to{
+  from {
+    filter: blur(0);
+  }
+  to {
     filter: blur(18px);
   }
 }
 
 .social_media{
   @apply flex relative z-30 justify-around mt-8  md:text-[22px] ;
+
   transform: translateY(600px);
-  animation: button_position  1.5s  1.6s  forwards;
+  animation: button_position 1.5s 1.6s forwards;
 }
-.social_media .link{
+.social_media .link {
   border: 1px solid white;
   @apply block w-fit relative z-20 rounded-xl h-fit px-3 md:px-6 md:py-3 py-2 uppercase;
 }
-.social_media .link:nth-child(1):hover{
+.social_media .link:nth-child(1):hover {
   border: 0px;
-  background: linear-gradient(to right , rgba(2, 101, 225, 1), rgba(24, 170, 253, 1) );
+  background: linear-gradient(
+    to right,
+    rgba(2, 101, 225, 1),
+    rgba(24, 170, 253, 1)
+  );
 }
-.social_media .link:nth-child(2):hover{
+.social_media .link:nth-child(2):hover {
   border: 0px;
-  background: linear-gradient(to right , #FCAF45,#E1306C ,#833AB4 );
-
+  background: linear-gradient(to right, #fcaf45, #e1306c, #833ab4);
 }
-.social_media .link:nth-child(3):hover{
+.social_media .link:nth-child(3):hover {
   border: 0px;
-  background: linear-gradient(to right , rgba(0, 114, 177, 1), rgba(0, 86, 133, 1) );
+  background: linear-gradient(
+    to right,
+    rgba(0, 114, 177, 1),
+    rgba(0, 86, 133, 1)
+  );
 }
 
 @keyframes button_position {
-  from{
+  from {
     opacity: 0;
     transform: translateY(600px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0);
   }

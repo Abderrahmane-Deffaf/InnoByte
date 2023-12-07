@@ -2,7 +2,7 @@ import React from "react";
 import "./eventLocation.css";
 import bg_bottom from "./../../assets/eventLocation/bg_bottom.png";
 import bg_top from "./../../assets/eventLocation/bg_top.png";
-import syphax from './../../assets/eventLocation/syphax.png'
+import syphax from "./../../assets/eventLocation/syphax.png";
 import shadow from "./../../assets/eventLocation/shadow.png";
 import { useInView } from "react-intersection-observer";
 
@@ -73,6 +73,7 @@ const EventLocation = () => {
           className="button-image-bg"
         />    
       </div>
+
     </section>
   );
 };

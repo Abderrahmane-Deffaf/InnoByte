@@ -5,8 +5,8 @@ function EventDate() {
   const { ref, inView } = useInView();
 
   return (
-    <div className=" section ">
-      <div ref={ref} className="flex flex-col items-center justify-center">
+    <div className=" section p-4  ">
+      <div ref={ref} className="flex flex-col w-full items-center justify-center">
         <div className={` ${inView ? "event" : "hidden"}`}>
           <h1 className="event  text-gradient bg-gradient-to-r from-[#1ABE6C] to-[#03BAE4] text-transparent bg-clip-text tracking-wide text-lg p-2 text-center">
             EVENT DATE
@@ -17,7 +17,7 @@ function EventDate() {
         </div>
 
         <div className="flex  items-center justify-center">
-          <table className="table-auto overflow-visible text-white mt-3 ">
+          <table className="table-auto w-full text-white mt-3 ">
             <thead>
               <tr className={`${inView ? "tr" : "hidden"}`}>
                 <th className={`${inView ? "th" : "hidden"}`}>
@@ -47,8 +47,7 @@ function EventDate() {
                 >
                   <p>SAT</p>
                 </th>
-                <th className={`${inView ? "th" : "hidden"}`}>
-                  <p> </p>
+                <th className={`${inView ? "th" : "hidden"} before:top-[30%]`}>
                 </th>
               </tr>
             </thead>

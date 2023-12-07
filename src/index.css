@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -44,4 +40,57 @@ body {
   align-items: center;
   justify-content: center;
   scroll-behavior: smooth;
+}
+
+/* Good Times Heavy */
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
