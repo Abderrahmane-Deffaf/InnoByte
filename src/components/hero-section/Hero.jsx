@@ -1,10 +1,9 @@
-import "./hero.css";
-import keyboard from "./../../assets/Hero/keyboard.svg";
-import LogoClr from "../../assets/Hero/LogoClr.svg";
-import lines from "../../assets/Hero/lines.svg";
-import pcMonitor from "../../assets/Hero/pcMonitor.svg";
+import keyboard from "./keyboard.svg";
+import LogoClr from "./LogoClr.svg";
+import lines from "./lines.svg";
+import pcMonitor from "./pcMonitor.svg";
 import CountDown from "./CountDown";
-import { useState } from "react";
+import "./hero.css";
 
 const Hero = () => {
   const [word, setWord] = useState("innovate");
@@ -29,6 +28,7 @@ const Hero = () => {
                 {word}
               </span>{" "}
               the future
+
             </h1>
             <p className=" font-poppins text-xl text-gray-100 font-light my-6">
             Where Creativity and Innovation Collide in Every Byte.            </p>
@@ -39,6 +39,7 @@ const Hero = () => {
           <div
             data-aos="fade-left"
             className=" z-10 hero-img group w-[400px]  mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 "
+
           >
             <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-mainGreen  drop-shadow-green group-hover:drop-shadow-[0px_0px_80px_rgba(26,190,108,0.5)] group-hover:h-[400px] group-hover:w-[400px] lg:group-hover:h-[500px] lg:group-hover:w-[500px] transition-all duration-500 h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] rounded-full"></div>
             <div
