@@ -21,7 +21,9 @@ import Aos from "aos"; */
 
 function App() {
   return (
-    <div className="container_wrapper">
+    <div
+      className="container_wrapper "
+    >
       <ToastContainer />
       <div className=" container mx-auto">
         <NavBar />

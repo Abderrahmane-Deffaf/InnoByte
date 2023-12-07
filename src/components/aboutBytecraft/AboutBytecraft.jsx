@@ -11,8 +11,8 @@ const AboutBytecraft = () => {
 
   return (
     <>
-      <section className="section overflow-hidden flex justify-center flex-col items-center relative h-[900px] lg:h-screen">
-        <div className="">
+      <section className="section overflow-hidden  flex justify-center flex-col items-center relative h-[900px] lg:h-screen">
+        <div className="mt-[10rem] mb-[5rem]">
           <div
             className={` ${inView ? "text-center" : "hidden"} relative z-10 `}
           >
@@ -36,10 +36,10 @@ const AboutBytecraft = () => {
               } flex items-center justify-center`}
             >
               <p className="max-w-xs px-3 sm:px-0 sm:max-w-full">
-                established in 2021 by Estin students, is your gateway to a
+                Established in 2021 by Estin students, is your gateway to a
                 dynamic tech community. We've been the driving force behind
-                amazing events like Chesstin, Ideatech, design camp, GameJam,
-                ByteFestival, and much more to come in the future. Mission: Our
+                amazing events like Chesstin, Ideatech, design camp, Press Start,
+                ByteFestival, and much more to come in the future. Our
                 goal is to create a space where diverse individuals can explore,
                 learn, and contribute to the ever-evolving world of technology.
               </p>

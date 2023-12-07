@@ -18,8 +18,8 @@ const Hero = () => {
   return (
     <div className=" hero-bg-gradient overflow-hidden relative section ">
       <RegForm show={showForm} showHandler={showHandler} />
-      <div className=" flex flex-col p-4 relative  mt-[4rem]  lg:flex-row lg:items-center lg:pt-0">
-        <div className="title flex flex-col gap-2 basis-full select-none cursor-logo   ">
+      <div className=" flex flex-col lg:max-w-[1960px] lg:mx-auto lg:justify-center p-4 relative lg:mt-[10rem]  mt-[4rem]  lg:flex-row lg:items-center lg:pt-0">
+        <div className="title flex lg:basis-[50%] flex-col gap-2 basis-full select-none cursor-logo   ">
           <h2>innobyte hackathon</h2>
           <h1 className=" text-2xl lg:text-4xl">
             <span>byte</span> by <span>byte</span> we, <br />{" "}
