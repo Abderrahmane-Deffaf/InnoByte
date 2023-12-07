@@ -4,13 +4,20 @@ import LogoClr from "./LogoClr.svg";
 import lines from "./lines.svg";
 import pcMonitor from "./pcMonitor.svg";
 import CountDown from "./CountDown";
-import { useState } from "react";
+import { useState , useEffect } from "react";
+import RegForm from "../registrartion-form/RegForm";
 
 const Hero = () => {
+  const [showForm, setShowForm] = useState(false);
+  const showHandler = (value) => {
+    setShowForm(value);
+  };
+
   const [word, setWord] = useState("innovate");
 
   return (
     <div className=" hero-bg-gradient relative section ">
+    <RegForm show={showForm} showHandler={showHandler}/>
       <div className=" relative">
         <div className=" px-10 flex flex-col  gap-[140px] lg:flex-row items-center  justify-around  pt-[100px] lg:pt-0">
           <div className="title select-none cursor-logo   ">
@@ -35,7 +42,7 @@ const Hero = () => {
             <p className=" font-poppins text-xl text-gray-100 my-8 font-light">
               Where Creativity and Innovation Collide in Every Byte.{" "}
             </p>
-            <button className=" w-fit font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
+            <button onClick={()=>showHandler(true)} className="  w-fit font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
               register now
             </button>
           </div>

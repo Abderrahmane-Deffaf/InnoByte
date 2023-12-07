@@ -5,6 +5,8 @@ import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventDate from "./components/event-date/EventDate";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 import NavBar from "./NavBar";
 /* import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +23,14 @@ function App() {
 
   return (
     <div className="container_wrapper">
+      <ToastContainer/>
+      <div className="min-h-screen section bg-gray-900 flex flex-col items-center justify-center">
+        <h1 className="text-5xl text-white font-bold mb-8 animate-pulse">
+          Coming Soon
+        </h1>
+        <p className="text-white text-lg mb-8">
+          We're working hard to bring you something amazing. Stay tuned!
+        </p>
       <div className=" container mx-auto">
         <NavBar />
       </div>
