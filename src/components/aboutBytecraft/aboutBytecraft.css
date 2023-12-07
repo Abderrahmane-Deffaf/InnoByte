@@ -86,7 +86,7 @@
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
   @apply relative py-12 px-8 md:p-10 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
 
-
+}
 @keyframes box_animation {
   from {
     opacity: 0;
