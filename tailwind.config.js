@@ -21,6 +21,9 @@ export default {
         blue: "0px 0px 20px rgba(3, 166, 255, 0.45)",
         green: "0px 0px 20px rgba(26, 190, 108, 0.45)",
       },
+      cursor:{
+        'logo': 'url(https://en.pimg.jp/098/740/043/1/98740043.jpg), auto'
+      }
     },
   },
   plugins: [],
