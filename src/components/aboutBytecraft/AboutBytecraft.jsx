@@ -57,7 +57,7 @@ const AboutBytecraft = () => {
               href="https://www.instagram.com/bytecraft.estin/"
               className="link"
             >
-              Instgram
+              Instagram
             </a>
             <a
               href="https://www.linkedin.com/company/bytecraft-club/posts/"
@@ -87,3 +87,4 @@ const AboutBytecraft = () => {
 };
 
 export default AboutBytecraft;
+

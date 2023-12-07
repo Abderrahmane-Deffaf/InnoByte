@@ -17,7 +17,7 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
             onChange={handlers.motivationHandler}
             value={handlers.motivation}
             type="text"
-            className=" lg:h-[310px] px-[26px] w-[100%] bg-white text-black py-3 border-none outline-none rounded-[18px]"
+            className=" lg:h-[210px] px-[26px] w-[100%] bg-white text-black py-3 border-none outline-none rounded-[18px]"
           />
         </article>
         <article className="flex  w-full flex-col items-start gap-[10px]">
@@ -25,13 +25,13 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
             htmlFor=""
             className="text-white text-[13px] font-[300] pl-[10px] uppercase"
           >
-            anythign to add
+            anything to add
           </label>
           <textarea
             onChange={handlers.anythingToAddHandler}
             value={handlers.anythingToAdd}
             type="text"
-            className=" lg:h-[310px] w-[100%]  px-[26px] bg-white text-black py-3 border-none outline-none rounded-[18px]"
+            className=" lg:h-[210px] w-[100%]  px-[26px] bg-white text-black py-3 border-none outline-none rounded-[18px]"
           />
         </article>
       </div>
