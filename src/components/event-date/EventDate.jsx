@@ -16,8 +16,8 @@ function EventDate() {
           </h2>
         </div>
 
-        <div className="flex  items-center justify-center">
-          <table className="table-auto w-full text-white mt-3 ">
+        <div className="flex w-full  items-center justify-center">
+          <table className="table-auto  text-white mt-3 ">
             <thead>
               <tr className={`${inView ? "tr" : "hidden"}`}>
                 <th className={`${inView ? "th" : "hidden"}`}>
@@ -47,7 +47,7 @@ function EventDate() {
                 >
                   <p>SAT</p>
                 </th>
-                <th className={`${inView ? "th" : "hidden"} before:top-[30%]`}>
+                <th className={`${inView ? "th" : "hidden"} before:top-[20%]`}>
                 </th>
               </tr>
             </thead>

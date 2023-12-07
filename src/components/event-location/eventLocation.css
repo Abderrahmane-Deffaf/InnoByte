@@ -138,6 +138,7 @@
   animation: button_position 1.5s 1.6s forwards;
 }
 
+
 .btn {
   @apply px-4 py-2 bg-[#1f1f1f] m-1 text-[20px] transition-all duration-500 rounded-[10px];
 }
@@ -153,11 +154,13 @@
   }
 }
 
-.btn:hover {
-  @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC];
+.btn:hover   {
+  @apply bg-gradient-to-r from-[#03BAE4]  to-[#A036FC] border-0;
   box-shadow: 0px 0px 20px 1px rgba(3, 186, 228, 1),
     0px 0px 20px 1px rgba(160, 54, 252, 1);
 }
+
+
 .logo {
   @apply w-full z-0 h-full;
   filter: blur(0);

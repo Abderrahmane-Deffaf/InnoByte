@@ -11,11 +11,11 @@ const Hero = () => {
 
   return (
     <div className=" hero-bg-gradient relative section ">
-      <div className="px-10  relative">
-        <div className=" px-10 flex flex-col  gap-[140px] lg:flex-row items-center  justify-around  pt-[100px] lg:pt-0">
-          <div className="title select-none cursor-logo   ">
+      <div className="relative">
+        <div className=" px-10 flex flex-col gap-[5rem] lg:flex-row items-center  ">
+          <div className="title flex flex-col gap-2 lg:gap-8 select-none cursor-logo   ">
             <h2>innobyte hackathon</h2>
-            <h1>
+            <h1 className=" text-2xl lg:text-4xl">
               <span>byte</span> by <span>byte</span> we, <br />{" "}
               <span
                 className="innovate"
@@ -32,16 +32,14 @@ const Hero = () => {
               </span>{" "}
               the future
             </h1>
-            <p className=" font-poppins text-xl text-gray-100 font-light my-6">
+            <p className=" font-poppins text-xl text-gray-100 font-light">
               Where Creativity and Innovation Collide in Every Byte.{" "}
             </p>
-            <button className=" font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
+            <button className=" w-fit font-goodtimes-rg text-xl font-bold py-4 px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue">
               register now
             </button>
           </div>
-          <div
-            className=" z-10 hero-img group w-[400px]  mx-auto h-[400px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 "
-          >
+          <div className=" z-10 hero-img group w-[380px]  mx-auto h-[320px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 ">
             <div className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-mainGreen  drop-shadow-green group-hover:drop-shadow-[0px_0px_80px_rgba(26,190,108,0.5)] group-hover:h-[400px] group-hover:w-[400px] lg:group-hover:h-[500px] lg:group-hover:w-[500px] transition-all duration-500 h-[300px] lg:h-[400px] w-[300px] lg:w-[400px] rounded-full"></div>
             <div
               id="pc-monitor"
@@ -67,14 +65,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div
-        className=" z-0  absolute top-20 right-0 w-[200px] h-[200px] lg:h-[300px] lg:w-[300px] blur-sm"
-      >
+      <div className=" z-0  absolute top-20 right-0 w-[200px] h-[200px] lg:h-[300px] lg:w-[300px] blur-sm">
         <img src={lines} alt="" className=" w-full h-full" />
       </div>
-      <div
-        className=" z-0  absolute bottom-[-20%] left-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] blur-sm"
-      >
+      <div className=" z-0  absolute bottom-[-20%] left-0 w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] blur-sm">
         <img src={lines} alt="" className="rotate-[180deg] w-full h-full" />
       </div>
     </div>

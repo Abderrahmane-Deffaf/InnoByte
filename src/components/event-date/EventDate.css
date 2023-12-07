@@ -71,9 +71,6 @@
   }
 }
 
-
-
-
 .table {
   display: flex;
   justify-content: center;
@@ -85,38 +82,34 @@ th {
   text-align: center;
   position: relative;
   font-family: "GoodTimesHv";
-
 }
 
 th,
 td {
-  padding: 1rem;
+  padding: 0.5rem 0.2rem;
 }
-
 
 
 
 thead > tr > th::before {
   content: "";
   width: 1px;
-  height: 300px;
   position: absolute;
   background-color: white;
   left: 0;
   height: 0;
 }
-
-.th::before {
-  animation: slideInHeight 0.5s ease 1s forwards;
-}
-
 @keyframes slideInHeight {
   from {
     height: 0;
   }
   to {
-    height: 300px; /* Set the desired final height */
+    height: 210px; /* Set the desired final height */
   }
+}
+
+.th::before {
+  animation: slideInHeight 0.5s ease 1s forwards;
 }
 
 tr {
@@ -125,7 +118,6 @@ tr {
 
 tr::after {
   content: "";
-  width: 500px;
   height: 1px;
   position: absolute;
   background-color: white;
@@ -144,7 +136,7 @@ tr::after {
   }
   to {
     visibility: visible;
-    width: 565px;
+    width: 385px;
   }
 }
 
@@ -182,7 +174,7 @@ td > p {
 }
 .date {
   opacity: 0;
-  box-shadow: 0px 0px 80px 0px #1ABE5EA6;
+  box-shadow: 0px 0px 80px 0px #1abe5ea6;
   animation: bgShow 0.5s ease 3s forwards;
 }
 
@@ -223,4 +215,28 @@ td > p {
 .date-number {
   position: relative;
   z-index: 1; /* Ensure the number appears above the "GO" text */
+}
+
+@media screen and (min-width: 600px) {
+  td,
+  th {
+    padding: 1rem;
+  }
+  @keyframes slideInHeight {
+    from {
+      height: 0;
+    }
+    to {
+      height: 300px; /* Set the desired final height */
+    }
+  }
+  @keyframes slideInWidth {
+    from {
+      width: 0px;
+    }
+    to {
+      visibility: visible;
+      width: 565px;
+    }
+  }
 }
