@@ -43,7 +43,6 @@ const RegForm = ({show,showHandler}) => {
           motivation,
           anythingToAdd,
         };
-        console.log(info) ; 
         setLoading(true)
         await axios.post("https://aceiny.tech:4444/api/v1/addp",info).then((res)=>{
             showHandler(false)
@@ -112,14 +111,20 @@ const RegForm = ({show,showHandler}) => {
         anythingToAddHandler : (e) => setAnythingToAdd(e.target.value),
     }
     const forms = [
-        <Form1 formHandler={formHandler}/>,
-        <Form2 handlers={form2} formHandler={formHandler}/>,
-        <Form3 handlers={form3} formHandler={formHandler}/>,
-        <Form4 handlers={form4} loading={loading} submit={submit} formHandler={formHandler} />
-    ]
+      <Form1 key={"form1"} formHandler={formHandler} />,
+      <Form2 key={"form2"} handlers={form2} formHandler={formHandler} />,
+      <Form3 key={"form3"} handlers={form3} formHandler={formHandler} />,
+      <Form4
+        key={"form4"}
+        handlers={form4}
+        loading={loading}
+        submit={submit}
+        formHandler={formHandler}
+      />,
+    ];
     return (
     <div className={`registration-form  fixed z-50 mt-4 lg:px-[100px] px-2 py-4 lg:pt-[80px] pb-[50px] left-[50%] translate-y-[-50%] translate-x-[-50%] w-[90%] sm:w-[70%] smoth-t shadow-inner-white rounded-3xl ${show?"top-[50%]":"top-[200%]"}`}>
-        <FaXmark onClick={()=>showHandler(false)} className=' cursor-pointer absolute top-8 right-12 text-l lg:text-[32px]'/>
+        <FaXmark onClick={()=>showHandler(false)} className=' cursor-pointer absolute top-3 right-4 text-l lg:text-[32px]'/>
         <div className=' z-50 h-full'>
         {
             forms.map((v,i)=>{

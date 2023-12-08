@@ -27,9 +27,10 @@ const Form3 = ({ formHandler, handlers }) => {
             htmlFor=""
             className="text-white text-[13px] font-[300] pl-[10px] uppercase"
           >
-            Team Members
+            Team Members Names (4 to 5 members)
           </label>
           <textarea
+            placeholder="They should all register with the same team name"
             onChange={handlers.teamMembersHandler}
             value={handlers.teamMembers}
             type="text"
@@ -38,7 +39,7 @@ const Form3 = ({ formHandler, handlers }) => {
         </article>
         <div className="flex flex-col gap-[30px] ">
           {fields.map((v, i) => (
-            <TextFIeld value={v.value} onchange={v.onchangee} label={v.label} />
+            <TextFIeld key={i} value={v.value} onchange={v.onchangee} label={v.label} />
           ))}
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const TextFIeld = ({label = "field" , value ,onchange}) => {
+  
   const changeHandler = (e) => {
     onchange(e.target.value)
   }
@@ -10,6 +11,7 @@ const TextFIeld = ({label = "field" , value ,onchange}) => {
           {label}
         </label>
         <input 
+        placeholder={label}
         value={value} 
         onChange={changeHandler}  
         type="text" 

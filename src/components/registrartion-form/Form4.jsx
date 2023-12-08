@@ -1,8 +1,7 @@
-import React from 'react'
-import { GoChevronRight , GoChevronLeft } from "react-icons/go";
+import React from "react";
+import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-const Form4 = ({formHandler , submit, loading ,handlers}) => {
-
+const Form4 = ({ formHandler, submit, loading, handlers }) => {
   return (
     <div className="flex  w-full flex-col justify-between h-full gap-[30px] ">
       <div className="flex flex-col w-full gap-[20px] sm:gap-[60px] justify-center items-center ">
@@ -14,6 +13,7 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
             your motivation
           </label>
           <textarea
+            placeholder="Your motivation"
             onChange={handlers.motivationHandler}
             value={handlers.motivation}
             type="text"
@@ -22,7 +22,7 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
         </article>
         <article className="flex  w-full flex-col items-start gap-[10px]">
           <label
-            htmlFor=""
+            htmlFor="anythingToAdd"
             className="text-white text-[13px] font-[300] pl-[10px] uppercase"
           >
             anything to add
@@ -31,6 +31,8 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
             onChange={handlers.anythingToAddHandler}
             value={handlers.anythingToAdd}
             type="text"
+            placeholder="Anything to add"
+            id="anythingToAdd"
             className=" lg:h-[210px] w-[100%]  px-[26px] bg-white text-black py-3 border-none outline-none rounded-[18px]"
           />
         </article>
@@ -61,7 +63,7 @@ const Form4 = ({formHandler , submit, loading ,handlers}) => {
       </div>
     </div>
   );
-}
+};
 
-export default Form4
+export default Form4;
 /* */

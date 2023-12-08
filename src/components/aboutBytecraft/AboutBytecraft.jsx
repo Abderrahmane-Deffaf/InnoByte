@@ -7,7 +7,6 @@ import { useInView } from "react-intersection-observer";
 
 const AboutBytecraft = () => {
   const { ref, inView } = useInView();
-  console.log(inView);
 
   return (
     <>

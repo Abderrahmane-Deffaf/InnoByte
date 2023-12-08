@@ -33,7 +33,7 @@ const Form2 = ({formHandler,handlers}) => {
     <div className='flex flex-col  lg:gap-[30px] justify-between h-full'>
         <div className='form2 '>
             {
-                fields.map((v,i)=> <TextFIeld value={v.value} onchange={v.onchangee} label={v.label} />)
+                fields.map((v,i)=> <TextFIeld key={i} value={v.value} onchange={v.onchangee} label={v.label} />)
             }
         </div>
         <div className='flex justify-end'>
