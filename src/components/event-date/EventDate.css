@@ -54,17 +54,14 @@
 }
 
 .event {
-  transform: translateY(-200%);
+  transform: translateY(-500%);
   opacity: 0;
   font-family: "GoodTimesHv";
   animation: eventid 1s ease forwards;
 }
 
 @keyframes eventid {
-  from {
-    opacity: 0;
-    transform: translateY(-200%);
-  }
+  
   to {
     transform: translateY(0);
     opacity: 1;

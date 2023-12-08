@@ -8,16 +8,8 @@ import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import NavBar from "./NavBar";
-/* import AOS from "aos";
-import "aos/dist/aos.css";
-import Aos from "aos"; */
+//import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 
-// const fullPageOptions = {
-//   scrollSensitivity: 3,
-//   touchSensitivity: 1,
-//   scrollSpeed: 400, // Adjust the scroll speed as needed
-//   resetSlides: true,
-// };
 
 function App() {
   return (

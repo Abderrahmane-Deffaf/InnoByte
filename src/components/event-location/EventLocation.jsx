@@ -10,12 +10,13 @@ const EventLocation = () => {
   const { ref, inView } = useInView();
 
   return (
-    <section className="flex flex-col overflow-hidden justify-center items-center section relative h-[1000px] lg:h-screen">
-      <div ref={ref} className="">
-        <div className={` ${inView ? "text-center" : "hidden"}`}>
-          <h3 className="text-decoration-1 ">Event Location</h3>
-          <h1 className="text-decoration-2">Syphax Hotel</h1>
+    <section className="flex  flex-col overflow-hidden justify-center items-center section relative ">
+      <div className="h-full   flex flex-col items-center justify-center">
+        <div className={` ${inView ? "text-center" : "hidden"} mt-4 lg:mt-0`}>
+          <h3 className="text-decoration-1 text-base ">Event Location</h3>
+          <h1 className="text-decoration-2 text-3xl">Syphax Hotel</h1>
         </div>
+        <div ref={ref}></div>
         <div className={` ${inView ? "logo-div" : "hidden"}`}>
           <img
             className="logo"
@@ -44,7 +45,7 @@ const EventLocation = () => {
             <span className="text-decoration relative z-20">View location</span>
           </a>
         </div>
-        <img src={bg_top} alt="top" className="top-image-bg " />
+        <img src={bg_top} alt="top" className="top-image-bg -z-10 " />
 
         <img src={bg_bottom} alt="button" className="button-image-bg" />
       </div>

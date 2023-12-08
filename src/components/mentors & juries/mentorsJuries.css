@@ -1,4 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 .mentors-section {
   width: 100%;
   min-height: 100vh;
@@ -14,13 +67,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin-top: 3rem;
+}
+
+.mentor-header h2, .mentor-header>p:first-child  {
+  font-family: "GoodTimesHv";
 }
 
 .mentors-section p {
   color: var(--White, #e6f4f3);
   text-align: center;
-  font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -44,7 +100,6 @@
 }
 .mentors-section h2 {
   color: var(--White, #e6f4f3);
-  font-family: Good Times;
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -54,7 +109,9 @@
 }
 @media (max-width: 528px) {
   .mentors-section h2 {
-    font-size: 30px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 35px;
   }
 }
 .mentorSlider {
@@ -88,7 +145,7 @@
     font-size: 16px !important;
   }
   .swiper-slide .mentor-information {
-    bottom: -306px !important;
+    bottom: -290px !important;
   }
   .swiper-slide:hover .mentor-information {
     bottom: 0 !important;
@@ -97,7 +154,7 @@
 @media (max-width: 528px) {
   .swiper-slide {
     width: 255px !important;
-    height: 215px;
+    height: 350px !important;
   }
   .sponsorImg {
     height: 100%;

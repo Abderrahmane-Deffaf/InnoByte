@@ -8,7 +8,7 @@ function EventDate() {
     <div className=" section  p-4 overflow-hidden  ">
       <div
         ref={ref}
-        className="flex flex-col  mt-[5rem] w-full gap-4 items-center justify-center"
+        className="flex min-h-full flex-col   w-full gap-4 items-center justify-center"
       >
         <div className={` ${inView ? "event" : "hidden"} flex flex-col gap-4`}>
           <h1 className="event  text-gradient bg-gradient-to-r from-[#1ABE6C] to-[#03BAE4] text-transparent bg-clip-text tracking-wide text-lg p-2 text-center">

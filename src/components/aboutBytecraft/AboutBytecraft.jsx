@@ -10,8 +10,8 @@ const AboutBytecraft = () => {
 
   return (
     <>
-      <section className="section overflow-hidden  flex justify-center flex-col items-center relative h-[900px] lg:h-screen">
-        <div className="mt-[10rem] mb-[5rem]">
+      <section className="section overflow-hidden  flex justify-center flex-col items-center relative ">
+        <div className="min-h-full  flex flex-col justify-center">
           <div
             className={` ${inView ? "text-center" : "hidden"} relative z-10 `}
           >
@@ -34,20 +34,15 @@ const AboutBytecraft = () => {
                 inView ? "box1-text" : "hidden"
               } flex items-center justify-center`}
             >
-              <p className="max-w-xs px-3 sm:px-0 sm:max-w-full">
-                Established in 2021 by Estin students, is your gateway to a
-                dynamic tech community. We've been the driving force behind
-                amazing events like Chesstin, Ideatech, design camp, Press Start,
-                ByteFestival, and much more to come in the future. Our
-                goal is to create a space where diverse individuals can explore,
-                learn, and contribute to the ever-evolving world of technology.
+              <p className="max-w-xs lg:max-w-full text-center ">
+                Established in 2021 by Estin students, is your gateway to a dynamic tech community. We've been the driving force behind amazing events like Chesstin, Ideatech, design camp, Press Start, ByteFestival, and much more to come in the future. Our goal is to create a space where diverse individuals can explore, learn, and contribute to the ever-evolving world of technology.
               </p>
             </div>
           </div>
           <div
             className={` ${
               inView ? "social_media" : "hidden"
-            } flex items-center lg:justify-between justify-center flex-col sm:flex-row gap-5 `}
+            } flex items-center lg:justify-between justify-center px-2 flex-wrap  gap-5 `}
           >
             <a href="https://web.facebook.com/ByteCraftEstin/" className="link">
               Facebook
