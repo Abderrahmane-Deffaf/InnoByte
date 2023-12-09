@@ -18,6 +18,8 @@ const AboutBytecraft = () => {
             <h3 className="text-decoration-3">Bytecraft</h3>
             <h1 className="text-decoration-4">Bytecraft CLub</h1>
           </div>
+
+          <div ref={ref}></div>
           <div className={` ${inView ? "logo-div" : "hidden"}`}>
             <img
               className={` ${
@@ -35,7 +37,12 @@ const AboutBytecraft = () => {
               } flex items-center justify-center`}
             >
               <p className="max-w-xs lg:max-w-full text-center ">
-                Established in 2021 by Estin students, is your gateway to a dynamic tech community. We've been the driving force behind amazing events like Chesstin, Ideatech, design camp, Press Start, ByteFestival, and much more to come in the future. Our goal is to create a space where diverse individuals can explore, learn, and contribute to the ever-evolving world of technology.
+                Established in 2021 by Estin students, is your gateway to a
+                dynamic tech community. We've been the driving force behind
+                amazing events like Chesstin, Ideatech, design camp, Press
+                Start, ByteFestival, and much more to come in the future. Our
+                goal is to create a space where diverse individuals can explore,
+                learn, and contribute to the ever-evolving world of technology.
               </p>
             </div>
           </div>
@@ -64,7 +71,6 @@ const AboutBytecraft = () => {
             className="absolute blur-sm left-0 z-0  bottom-[-150px] w-[350px] h-[400px]"
             src={bg_top}
             alt="background"
-            ref={ref}
           />
           <img
             style={{

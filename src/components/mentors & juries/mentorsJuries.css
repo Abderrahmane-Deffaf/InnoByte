@@ -50,8 +50,6 @@
   font-style: normal;
 }
 
-
-
 .mentors-section {
   width: 100%;
   min-height: 100vh;
@@ -70,7 +68,8 @@
   margin-top: 3rem;
 }
 
-.mentor-header h2, .mentor-header>p:first-child  {
+.mentor-header h2,
+.mentor-header > p:first-child {
   font-family: "GoodTimesHv";
 }
 
@@ -87,9 +86,9 @@
 @media (max-width: 528px) {
 }
 .mentors-section .special-p {
-  color: var(--Green, #03BAE4);
-  text-shadow: 0px 0px 15px #03BAE4;
-  font-family: Good Times;
+  color: var(--Green, #03bae4);
+  text-shadow: 0px 0px 15px #03bae4;
+  font-family: "GoodTimesHv";
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
@@ -123,6 +122,9 @@
 .mentorImg {
   display: flex;
   width: 100%;
+  object-fit:contain ;
+  height: 100%;
+  object-position: top;
   backdrop-filter: blur(15px);
   border-radius: 20px;
 }
@@ -145,7 +147,7 @@
     font-size: 16px !important;
   }
   .swiper-slide .mentor-information {
-    bottom: -290px !important;
+    bottom: -210px !important;
   }
   .swiper-slide:hover .mentor-information {
     bottom: 0 !important;
@@ -154,7 +156,7 @@
 @media (max-width: 528px) {
   .swiper-slide {
     width: 255px !important;
-    height: 350px !important;
+    height: 269px !important;
   }
   .sponsorImg {
     height: 100%;
@@ -173,20 +175,21 @@
   box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.05) inset;
   border-radius: 20px;
   padding: 24px 0;
-  background: rgba(0, 0, 0, 0.80);
-  transition: .3s;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
 }
 .swiper-slide:hover .mentor-information {
   bottom: 0;
 }
 .swiper-slide .mentor-name {
-    font-size: 20px;
-    margin-bottom: 20px;
-    font-family: "GoodTimesRgb";
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #1ABE6C 0%, #03BAE4 100%);    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  font-size: 20px;
+  font-family: "GoodTimesHv";
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #1abe6c 0%, #03bae4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .swiper-slide-active {
   transform: scale(1.2); /* Increase scale for centered slide */

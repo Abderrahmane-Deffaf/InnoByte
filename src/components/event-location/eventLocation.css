@@ -187,13 +187,8 @@
   }
 }
 
-.top-image-bg {
-  filter: blur(8px);
-  @apply absolute left-0 -top-[100px] w-[350px] h-[400px];
-}
-.button-image-bg {
-  @apply absolute blur-md right-0 z-0 -bottom-[390px] md:-bottom-[300px] w-[350px] h-[400px];
-}
+
+
 
 .box-text {
   transform: translateX(800px);

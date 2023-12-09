@@ -1,15 +1,13 @@
 import "./EventDate.css";
 import { useInView } from "react-intersection-observer";
+import bg_bottom from "./../../assets/eventLocation/bg_bottom.png";
 
 function EventDate() {
   const { ref, inView } = useInView();
 
   return (
-    <div className=" section  p-4 overflow-hidden  ">
-      <div
-        ref={ref}
-        className="flex min-h-full flex-col   w-full gap-4 items-center justify-center"
-      >
+    <div className=" section  p-4  ">
+      <div className="flex relative min-h-full flex-col   w-full gap-4 items-center justify-center">
         <div className={` ${inView ? "event" : "hidden"} flex flex-col gap-4`}>
           <h1 className="event  text-gradient bg-gradient-to-r from-[#1ABE6C] to-[#03BAE4] text-transparent bg-clip-text tracking-wide text-lg p-2 text-center">
             EVENT DATE
@@ -18,7 +16,7 @@ function EventDate() {
             14, 15, 16 DECEMBER
           </h2>
         </div>
-
+        <div ref={ref}></div>
         <div className="flex w-full  items-center justify-center">
           <table className="table-auto  text-white mt-3 ">
             <thead>
@@ -144,6 +142,8 @@ function EventDate() {
             </tbody>
           </table>
         </div>
+        <img src={bg_bottom} alt="button" className="top-image-bg" />
+        <img src={bg_bottom} alt="button" className="button-image-bg" />
       </div>
     </div>
   );

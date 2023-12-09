@@ -9,6 +9,10 @@
   text-rendering: optimizeLegibility;
 }
 
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
 #root {
   margin: 0;
   padding: 0;

@@ -214,6 +214,14 @@ td > p {
   z-index: 1; /* Ensure the number appears above the "GO" text */
 }
 
+.top-image-bg {
+  filter: blur(8px);
+  @apply absolute right-0 -top-[100px] w-[350px] lg:h-[300px] h-[100px];
+}
+.button-image-bg {
+  @apply absolute blur-md left-0 z-0 lg:bottom-[-90px] -bottom-[90px] md:-bottom-[300px] w-[350px] lg:h-[300px] h-[100px];
+}
+
 @media screen and (min-width: 600px) {
   td,
   th {

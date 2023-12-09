@@ -1,6 +1,5 @@
 import React from "react";
 import "./eventLocation.css";
-import bg_bottom from "./../../assets/eventLocation/bg_bottom.png";
 import bg_top from "./../../assets/eventLocation/bg_top.png";
 import syphax from "./../../assets/eventLocation/syphax.png";
 import shadow from "./../../assets/eventLocation/shadow.png";
@@ -10,8 +9,8 @@ const EventLocation = () => {
   const { ref, inView } = useInView();
 
   return (
-    <section className="flex  flex-col overflow-hidden justify-center items-center section relative ">
-      <div className="h-full   flex flex-col items-center justify-center">
+    <section className="flex  flex-col  justify-center items-center section relative ">
+      <div className="h-full overflow-hidden  flex flex-col items-center justify-center">
         <div className={` ${inView ? "text-center" : "hidden"} mt-4 lg:mt-0`}>
           <h3 className="text-decoration-1 text-base ">Event Location</h3>
           <h1 className="text-decoration-2 text-3xl">Syphax Hotel</h1>
@@ -45,9 +44,6 @@ const EventLocation = () => {
             <span className="text-decoration relative z-20">View location</span>
           </a>
         </div>
-        <img src={bg_top} alt="top" className="top-image-bg -z-10 " />
-
-        <img src={bg_bottom} alt="button" className="button-image-bg" />
       </div>
     </section>
   );
