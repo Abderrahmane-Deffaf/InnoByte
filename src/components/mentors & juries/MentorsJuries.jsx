@@ -42,7 +42,7 @@ function MentorsJuries() {
         className="mentorSlider"
       >
         <SwiperSlide className="mentors">
-          <img className="mentorImg " src={mentor1} />
+          <img loading="lazy" alt="moussaab bedla" className="mentorImg " src={mentor1} />
           <div className="mentor-information">
             <p className="mentor-name">mousaab badla</p>
             <ul className="text-center">
@@ -54,7 +54,7 @@ function MentorsJuries() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="mentors">
-          <img className="mentorImg" src={mentor2} />
+          <img loading="lazy" alt="ahmed yacine bouchouareb" className="mentorImg" src={mentor2} />
           <div className="mentor-information">
             <p className="mentor-name">ahmed yacine bouchouareb</p>
             <ul className="text-center">
@@ -68,7 +68,7 @@ function MentorsJuries() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="mentors">
-          <img className="mentorImg" src={mentor3} />
+          <img loading="lazy" alt="said drai" className="mentorImg" src={mentor3} />
           <div className="mentor-information">
             <p className="mentor-name">said drai</p>
             <ul className="text-center">
@@ -78,7 +78,7 @@ function MentorsJuries() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="mentors">
-          <img className="mentorImg" src={mentor4} />
+          <img loading="lazy" alt="oussama mekhaldi" className="mentorImg" src={mentor4} />
           <div className="mentor-information">
             <p className="mentor-name">oussama mekhaldi</p>
             <ul className="text-center">
@@ -90,7 +90,7 @@ function MentorsJuries() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="mentors">
-          <img className="mentorImg" src={mentor5} />
+          <img loading="lazy" alt="aymen berriche" className="mentorImg" src={mentor5} />
           <div className="mentor-information">
             <p className="mentor-name">Aymen Berriche</p>
             <ul className=" text-center">
@@ -102,7 +102,7 @@ function MentorsJuries() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="mentors">
-          <img className="mentorImg" src={mentor6} />
+          <img loading="lazy" alt="imad eddine hamda" className="mentorImg" src={mentor6} />
           <div className="mentor-information">
             <p className="mentor-name">Imad Eddine hamda</p>
             <ul className=" text-center">
