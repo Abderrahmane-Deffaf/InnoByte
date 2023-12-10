@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="title flex lg:basis-[50%] flex-col lg:gap-8 gap-2  select-none cursor-logo   ">
           <h2>innobyte hackathon</h2>
           <h1 className=" text-2xl lg:text-4xl">
-            <span>byte</span> by <span>byte</span> we, <br />{" "}
+            <span >byte</span> by <span>byte</span> we, <br />{" "}
             <span
               className="innovate"
               onMouseEnter={() => {
