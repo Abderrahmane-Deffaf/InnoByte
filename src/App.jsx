@@ -8,14 +8,12 @@ import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import NavBar from "./NavBar";
+import EventAgenda from "./components/event-agenda/EventAgenda";
 //import MentorsJuries from "./components/mentors & juries/MentorsJuries";
-
 
 function App() {
   return (
-    <div
-      className="container_wrapper "
-    >
+    <div className="container_wrapper ">
       <ToastContainer />
       <div className=" container mx-auto">
         <NavBar />
@@ -26,7 +24,7 @@ function App() {
       <EventDate />
       {/* <Sponsors />
       <MentorsJuries /> */}
-      {/* <EventAgenda /> */}
+      <EventAgenda />
       <AboutBytecraft />
     </div>
   );
