@@ -9,6 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import NavBar from "./NavBar";
 import MentorsJuries from "./components/mentors & juries/MentorsJuries";
+import Sponsors from "./components/sponsors/Sponsors";
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
       <Hero />
       <EventLocation />
       <EventDate />
-      {/* <Sponsors />
+      {/*
        */}
       <MentorsJuries />
+      <Sponsors/>
       {/* <EventAgenda /> */}
       <AboutBytecraft />
     </div>

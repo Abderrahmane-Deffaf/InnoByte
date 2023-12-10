@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sponsors-section {
   width: 100%;
   min-height: 100vh;
@@ -27,12 +39,13 @@
   margin-top: 0;
   width: min(90%, 800px);
 }
+
 @media (max-width: 528px) {
 }
 .sponsors-section .special-p {
   color: var(--Green, #1abe6c);
   text-shadow: 0px 0px 15px #1abe6c;
-  font-family: Good Times;
+  font-family: "GoodTimesHv";
   font-size: 18px;
   font-style: normal;
   font-weight: 200;
@@ -43,7 +56,7 @@
 }
 .sponsors-section h2 {
   color: var(--White, #e6f4f3);
-  font-family: Good Times;
+  font-family: "GoodTimesHv";
   font-size: 40px;
   font-style: normal;
   font-weight: 900;
@@ -76,6 +89,11 @@
 .swiper-slide {
   width: 350px !important;
   background-color: transparent;
+  transform: scale(1.2); /* Increase scale for centered slide */
+  opacity: 0.88; /* Maintain full opacity for centered slide */
+  backdrop-filter: blur(13px);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  border-radius: 35px;
 }
 @media (max-width: 768px) {
   .swiper-slide {
@@ -84,19 +102,13 @@
 }
 @media (max-width: 528px) {
   .swiper-slide {
-    width: 215px !important;
-    height: 215px;
+    width: 269px !important;
+    height: 269px;
+    left: -3px;
   }
   .sponsorImg {
     height: 100%;
   }
-}
-.swiper-slide-active {
-  transform: scale(1.2); /* Increase scale for centered slide */
-  opacity: 0.88; /* Maintain full opacity for centered slide */
-  backdrop-filter: blur(13px);
-  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
-  border-radius: 35px;
 }
 .swiper-slide:not(.swiper-slide-active) {
   filter: opacity(0.65); /* Reduce opacity for non-centered slides */
