@@ -19,7 +19,7 @@ function MentorsJuries() {
         <h2>Our Mentors</h2>
         <p>
           A stellar lineup of mentors and juries, industry pianners committes to
-          guiding and evaluating <br /> the ingenious solutions created during
+          guiding and evaluating the ingenious solutions created during
           InnoByte Hackathon.
         </p>
       </div>

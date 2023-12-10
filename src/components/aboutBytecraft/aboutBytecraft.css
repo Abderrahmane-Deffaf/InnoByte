@@ -56,7 +56,7 @@
   display: inline-block;
   text-shadow: 1px 1px 14px #03bae4;
   transform: translateY(-200px);
-  @apply text-[1.5rem] lg:text-[2rem];
+  @apply text-[1.5rem] lg:text-[1.5rem];
   font-family: "GoodTimesHv";
   animation: text_from_top_to_bottom 1s forwards;
 }
@@ -76,7 +76,7 @@
   font-family: "GoodTimesHv";
 
   transform: translateY(-200px);
-  @apply font-bold  md:py-2 text-3xl md:text-[45px] tracking-wide  uppercase;
+  @apply font-bold  md:py-2 text-3xl md:text-[2rem] tracking-wide  uppercase;
   animation: text_from_top_to_bottom 1s forwards;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .box1-text{
-  @apply text-white md:text-[25px] lg:text-[30px] text-[20px] w-[350px] lg:w-[800px] md:w-[600px];
+  @apply text-white md:text-[25px] lg:text-[1.5rem] text-[20px] w-[350px] lg:w-[800px] md:w-[600px];
   transform: translateY(800px);
   animation: box_text_bottom_position 1s 1.5s forwards;
 }

@@ -76,14 +76,19 @@
 .mentors-section p {
   color: var(--White, #e6f4f3);
   text-align: center;
-  font-size: 20px;
+  @apply text-base lg:text-[1.5rem]  ; 
+  max-width: 80%;
   font-style: normal;
+  text-align: center;
   font-weight: 400;
   line-height: normal;
   margin-top: 0;
   width: 100%;
 }
 @media (max-width: 528px) {
+  .mentors-section p {
+    max-width: 100%;
+  }
 }
 .mentors-section .special-p {
   color: var(--Green, #03bae4);
