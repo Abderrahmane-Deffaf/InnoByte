@@ -42,10 +42,10 @@ const Hero = () => {
             Where Creativity and Innovation Collide in Every Byte.{" "}
           </p>
           <button
-            onClick={() => showHandler(true)}
-            className="  w-fit font-goodtimes-rg text-xl font-bold py-2 px-3 lg:py-4 lg:px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green hover:bg-gradient-to-r hover:from-mainBlue hover:to-mainPurple hover:drop-shadow-blue"
+            disabled
+            className=" opacity-50 w-fit font-goodtimes-rg text-base font-bold py-2 px-3 lg:py-4 lg:px-6 rounded-3xl  bg-gradient-to-r from-mainGreen to-mainBlue transition-all  duration-300 drop-shadow-green "
           >
-            register now
+            Registrartions are closed
           </button>
         </div>
         <div className=" z-10 hero-img group w-[150px]  mx-auto h-[300px] lg:w-[550px] lg:h-[450px] relative transition-all duration-500 ">
