@@ -16,7 +16,7 @@ function EventAgenda() {
   const handleSwipright = (e) => {
     if (
       e.target.src ===
-      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day2-right.png"
+      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day2-right-jxYolSKC.png"
     ) {
       setBtnR(btnD3);
       setBtnL(btnD1);
