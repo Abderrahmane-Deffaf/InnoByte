@@ -16,7 +16,7 @@ function EventAgenda() {
   const handleSwipright = (e) => {
     if (
       e.target.src ===
-      "https://innobyte.vercel.app/assets/eventAgenda/btn-day2-right.png"
+      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day2-right.png"
     ) {
       setBtnR(btnD3);
       setBtnL(btnD1);
@@ -24,7 +24,7 @@ function EventAgenda() {
       setSlideDay("Friday");
     } else if (
       e.target.src ===
-      "https://innobyte.vercel.app/assets/eventAgenda/btn-day3.png"
+      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day3.png"
     ) {
       setBtnR("");
       setBtnL(btnD2Left);
@@ -36,7 +36,7 @@ function EventAgenda() {
   const handleSwipleft = (e) => {
     if (
       e.target.src ===
-      "https://innobyte.vercel.app/assets/eventAgenda/btn-day2-left.png"
+      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day2-left.png"
     ) {
       setBtnR(btnD3);
       setBtnL(btnD1);
@@ -44,7 +44,7 @@ function EventAgenda() {
       setSlideDay("Friday");
     } else if (
       e.target.src ===
-      "https://innobyte.vercel.app/assets/eventAgenda/btn-day1.png"
+      "https://innobyte.vercel.app/src/assets/eventAgenda/btn-day1.png"
     ) {
       setBtnR(btnD2Right);
       setBtnL("");
@@ -89,6 +89,8 @@ function EventAgenda() {
           <div
             className="aBtn btn-right absolute"
             onClick={(e) => {
+              console.log(e.target.src) ; 
+
               return handleSwipright(e);
             }}
           >
