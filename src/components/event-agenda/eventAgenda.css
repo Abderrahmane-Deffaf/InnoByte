@@ -1,22 +1,174 @@
-.first-title{
-  color:#03BAE4 ;
-  text-shadow: 1px 1px 14px #03BAE4;
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("../../fonts/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("../../fonts/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.first-title {
+  color: #03bae4;
+  text-shadow: 1px 1px 14px #03bae4;
   transform: translateY(-200px);
   @apply text-[22px];
   animation: text_from_top_to_bottom 1s forwards;
 }
-.second_title{
+.second_title {
   transform: translateY(-200px);
   @apply font-bold  md:py-2 text-[38px] md:text-[45px] tracking-wide  uppercase;
   animation: text_from_top_to_bottom 1s forwards;
 }
 
 @keyframes text_from_top_to_bottom {
-  from{
+  from {
     opacity: 0;
     transform: translateY(250px);
-  }to{
+  }
+  to {
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+.container-slider {
+  min-width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+.aBtn {
+  top: 44%;
+  cursor: pointer;
+}
+.btn-left {
+  left: 5%;
+}
+.btn-right {
+  right: 5%;
+}
+
+.btnImg {
+  width: 150px;
+}
+@media (max-width: 768px) {
+  .btnImg {
+    width: 160px;
+  }
+  .btn-right {
+    right: 2%;
+    bottom: -10%;
+    display: flex;
+    align-items:end;
+    justify-content: flex-start;
+  }
+  .btn-left {
+    left: 0%;
+    bottom: -10%;
+    display: flex;
+    align-items:end;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 450px) {
+  .btnImg {
+    width: 130px;
+  }
+  .btn-right {
+    right: 0%;
+  }
+  .btn-left {
+    left: 0%;
+  }
+}
+.slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.day {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+}
+.time-container {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5),
+    0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(25px);
+  padding: 8px 0;
+  width: min(150px, calc(100% - 70% - 5px));
+  text-align: center;
+}
+.time {
+  text-align: center;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "GoodTimesHv";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: linear-gradient(90deg, #1abe6c 0%, #03bae4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .time {
+    font-size: 0.8rem;
+  }
+}
+.action {
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.5),
+    0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(25px);
+  padding: 8px 0 10px 30px;
+  width: min(600px, 60%);
+  color: var(--White, #e6f4f3);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "GoodTimesHv";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .action {
+    font-size: 1rem;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+.container-bg {
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Good Times;
+  font-size: 160px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: 10px;
+  text-transform: capitalize;
+  opacity: 0.4;
+  background: linear-gradient(90deg, #1abe6c 0%, #03bae4 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 25%;
+}
+.friday {
+  font-size: 180px;
+  letter-spacing: 45px;
+  top: 20%;
 }

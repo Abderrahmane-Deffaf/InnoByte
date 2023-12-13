@@ -10,6 +10,7 @@ import { ToastContainer } from "react-toastify";
 import NavBar from "./NavBar";
 import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import Sponsors from "./components/sponsors/Sponsors";
+import EventAgenda from "./components/event-agenda/EventAgenda";
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
        */}
       <MentorsJuries />
       <Sponsors/>
-      {/* <EventAgenda /> */}
+      <EventAgenda/>
       <AboutBytecraft />
     </div>
   );
