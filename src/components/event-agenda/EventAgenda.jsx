@@ -39,6 +39,7 @@ function EventAgenda() {
       e.target.src ===
       "https://innobyte.vercel.app/assets/btn-day2-left-izUEhRmZ.png"
     ) {
+      
       setBtnR(btnD3);
       setBtnL(btnD1);
       setSlide("Day2");
